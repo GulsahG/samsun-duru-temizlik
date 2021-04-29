@@ -21,7 +21,7 @@ const IndexPage = () => {
           description: 'Samsun Duru Temizlik Samsun\'un her yerinde ev, ofis temizliği servisi veriyor.',
           images: [
             {
-              url: process.env.GRAPH_IMAGE_URL,
+              url: 'https://samsun-duru-temizlik.vercel.app/_next/static/images/logo-220a15d9f60b5967a6d7e50b3c4b8e34.svg',
               width: 548,
               height: 372,
               alt: 'Şirket logosu-duru temizlik',
