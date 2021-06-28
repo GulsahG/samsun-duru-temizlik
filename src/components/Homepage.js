@@ -9,6 +9,7 @@ const Homepage = () => {
       textSize="h2" 
       textColor="primaryBlue"
       textAlign="center"
+      m="4vh 0 0 0"
     >
       Samsun Duru Temizlik
     </Text>

@@ -1,4 +1,5 @@
 import '../styles/fonts.sass';
+import '../styles/style.scss';
 import Nav from '../src/components/Nav';
 import  { BreakpointProvider } from 'react-socks';
 import { ThemeProvider, StyleReset } from 'atomize';
@@ -22,9 +23,9 @@ const MyApp = ({ Component, pageProps }) => {
       size: {
         h1: "62px",
         h2: "42px",
-        h3: "26px",
-        body: "16px",
-        smallB: "12px"
+        h3: "24px",
+        body: "18px",
+        smallB: "14px"
       },
       height: {
         h1: "1.5",
@@ -33,6 +34,16 @@ const MyApp = ({ Component, pageProps }) => {
         body: "1.8",
         smallB: "1.8"
       }
+    },
+    grid: {
+      containerWidth: {
+        xs: "540px",
+        sm: "720px",
+        md: "960px",
+        lg: "1156px",
+        xl: "1350px"
+      },
+      gutterWidth: "12px",
     }
   };
 
