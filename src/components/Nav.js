@@ -13,13 +13,13 @@ const Nav = () => {
         w="100vw"
         h="19vh"
         m="2.5vh 0"
-        justify="space-around"
+        justify="space-evenly"
         align="center"
       >
         <Image 
           w="12.5vw" 
           h="15vh" 
-          p="2vh" 
+          p="2vh 0" 
           src={require('../images/logo.svg')} 
         />
         <Div 
@@ -32,7 +32,7 @@ const Nav = () => {
             color="primaryGreen"
           />
           <Text 
-            p="0 0.75rem" 
+            p="0 0 0 0.75rem" 
             tag="body" 
             textSize="body" 
             textColor="alpha"
@@ -55,7 +55,7 @@ const Nav = () => {
                 className="nav-hover" 
                 m="0 0.5rem" 
                 textSize="h3"
-                p={{lg: "0.25rem 0.5rem", xl: "0.25rem 1rem" }}
+                p={{lg: "0.25rem 0.5rem", xl: "0.25rem 0.75rem" }}
               >
                 <Anchor     
                   textColor="alpha"
