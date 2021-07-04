@@ -7,7 +7,7 @@ const Homepage = () => {
     <>
       <Text 
         tag="h1" 
-        w="75vw"
+        w="90vw"
         m="1.5vh auto 3vh auto"
         fontFamily="secondary" 
         textSize="h2" 

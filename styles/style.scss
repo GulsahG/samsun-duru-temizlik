@@ -17,12 +17,28 @@ html {
 .carousel-img {
   object-fit: cover;
   object-position: top;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 2px inset #fff;
+  -moz-box-shadow: 0px -0.5vw 2vw #ccc;
+  -webkit-box-shadow: 0px -0.5vw 2vw #ccc;
+  box-shadow: 0px -0.5vw 2vw #ccc;
 }
 
-.carousel-root, .carousel .slide img{
-  width: 100vw;
-  height: 35vw;
+.carousel-root, .carousel .slide img {
+  width: 90vw;
+  height: 32.5vw;
   margin: 0 auto;
+  -moz-box-shadow: 0px -0.5vw 1.5vw #ccc;
+  -webkit-box-shadow: 0px -0.5vw 1.5vw #ccc;
+  box-shadow: 0px -0.5vw 1.5vw #ccc;
+  border-top-left-radius: 15vw;
+  border-top-right-radius: 15vw;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 2px groove #fff;
 }
 
 .carousel.carousel-slider .control-arrow:hover {
@@ -31,14 +47,14 @@ html {
 
 .carousel-button {
   position: absolute;
-  top: calc(50% - 1.75vw);
+  top: calc(60% - 1.75vw);
   bottom: auto;
   z-index: 2;
   border-radius: 10px;
 }
 
 .right {
-  left: calc(100% - 5vw);
+  left: calc(100% - 4.25vw);
 }
 
 .carousel .carousel-status {

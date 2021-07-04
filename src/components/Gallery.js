@@ -6,13 +6,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 
 const Gallery = () => {
   const images = [
-    require(`../images/supplies.jpg?webp`),
-    require(`../images/gloves.jpg?webp`),
-    require(`../images/bucket.jpg?webp`),
-    require(`../images/spray.jpg?webp`),
-    require(`../images/vacuum.jpg?webp`),
-    require(`../images/sink.jpg?webp`),
-    require(`../images/cleaning.jpg?webp`),
+    {src: require(`../images/supplies.jpg?webp`), alt: 'Samsun Duru Temizlik, temizlik ürünleri'},
+    {src: require(`../images/gloves.jpg?webp`), alt: 'Samsun temizlik şirketi elemanı'},
+    {src: require(`../images/bucket.jpg?webp`), alt: 'Temizlik ürünleri dolu vileda sepeti'},
+    {src: require(`../images/spray.jpg?webp`), alt: 'Samsun temizlik şirketi elemanı'},
+    {src: require(`../images/vacuum.jpg?webp`), alt: 'Samsun ev temizliği süpürme'},
+    {src: require(`../images/sink.jpg?webp`), alt: 'Samsun ev lavabo temizliği'},
+    {src: require(`../images/cleaning.jpg?webp`), alt: 'Samsun ev banyo temizliği'}
   ]
 
   return (
@@ -21,7 +21,7 @@ const Gallery = () => {
       interval="3000"
       infiniteLoop
       emulateTouch
-      showThumbs="false"
+      showThumbs={false}
       renderArrowPrev={(onClickHandler, hasPrev) =>
       hasPrev && (
         <button
@@ -51,8 +51,9 @@ const Gallery = () => {
         return (
           <Image 
             key={idx}
-            src={img}
+            src={img.src}
             className="carousel-img"
+            alt={img.alt}
           />
         );
       })}
