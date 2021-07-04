@@ -7,14 +7,15 @@ const Homepage = () => {
     <>
       <Text 
         tag="h1" 
-        w="90vw"
-        m="1.5vh auto 3vh auto"
+        w="92.5vw"
+        m="1.5vh auto 5vh auto"
         fontFamily="secondary" 
         textSize="h2" 
         textColor="primaryBlue"
         textAlign="center"
+        className="typing"
       >
-        Samsun Duru Temizlik
+        samsun duru temizlik
       </Text>
       <Gallery />
     </>
