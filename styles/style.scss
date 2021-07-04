@@ -17,12 +17,11 @@ html {
 .carousel-img {
   object-fit: cover;
   object-position: top;
-  border-radius: 20px;
 }
 
 .carousel-root, .carousel .slide img{
-  width: 70vw;
-  height: 30vw;
+  width: 100vw;
+  height: 35vw;
   margin: 0 auto;
 }
 
@@ -39,7 +38,7 @@ html {
 }
 
 .right {
-  left: calc(100% - 4vw);
+  left: calc(100% - 5vw);
 }
 
 .carousel .carousel-status {

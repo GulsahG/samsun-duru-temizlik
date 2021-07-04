@@ -18,62 +18,69 @@ const Nav = () => {
       <Div 
         d="flex"
         w="100vw"
-        h="19vh"
-        m="2.5vh 0"
-        justify="space-evenly"
+        h="17.5vh"
         align="center"
       >
         <Image 
           w="12.5vw" 
           h="15vh" 
-          p="2vh 0" 
+          p="1.25vh 1vw"
           src={require('../images/logo.svg')} 
         />
         <Div 
-          d="flex" 
-          align="center"
-        >
-          <Icon 
-            name="Checked" 
-            size="20px" 
-            color="primaryGreen"
-          />
-          <Text 
-            p="0 0 0 0.75rem" 
-            tag="p" 
-            textSize="body" 
-            textColor="alpha"
-          >
-            7/24 Hizmete Açığız
-          </Text>
-        </Div>
-        <Div 
           d="flex"
-          w="auto"
-          h="10vh"
-          p="1rem"
+          w="100vw"
+          h="17.5vh"
+          m="2.5vh 0"
+          justify="space-evenly"
           align="center"
         >
-          {navItems.map((item,idx) => {
-            return (
-              <Link
-                key={idx}
-                href={item.location}
-                as="/"
-              > 
-                <Text 
-                  className="nav-hover" 
-                  m="0 0.5rem" 
-                  textSize="h3"
-                  textColor="alpha"
-                  hoverTextColor="primaryBlue" 
-                  p={{lg: "0.25rem 0.5rem", xl: "0.25rem 0.75rem" }}
-                >
-                  {item.name}
-                </Text>
-              </Link>
-            );
-          })}
+          <Div 
+            d="flex" 
+            align="center"
+          >
+            <Icon 
+              name="Checked" 
+              size="20px" 
+              color="primaryGreen"
+            />
+            <Text 
+              p="0 0 0 0.75rem" 
+              tag="p" 
+              textSize="body" 
+              textColor="alpha"
+            >
+              7/24 Hizmete Açığız
+            </Text>
+          </Div>
+          <Div 
+            d="flex"
+            w="auto"
+            h="10vh"
+            p="1rem"
+            align="center"
+          >
+            {navItems.map((item,idx) => {
+              return (
+                <Link
+                  key={idx}
+                  href={item.location}
+                  as="/"
+                > 
+                  <Text 
+                    className="nav-hover" 
+                    m="0 0.5rem"
+                    textSize="h3"
+                    textColor="alpha"
+                    hoverTextColor="primaryBlue" 
+                    p={{lg: "0.25rem 0.5rem", xl: "0.25rem 0.75rem" }}
+                  >
+                    {item.name}
+                  </Text>
+                </Link>
+              );
+            })}
+          </Div>
         </Div>
       </Div>
     </nav>
