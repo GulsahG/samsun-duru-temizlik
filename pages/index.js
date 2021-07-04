@@ -1,6 +1,6 @@
 import React from 'react';
 import { NextSeo } from 'next-seo';
-import Homepage from '../src/components/Homepage';
+import Homepage from './Homepage';
 
 const IndexPage = () => {
   return (

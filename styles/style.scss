@@ -1,12 +1,49 @@
+html {
+  overflow-x: hidden;
+}
+
 .nav-hover {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-    
+  
   &:hover {
-    box-shadow: 1px 1px #7ce4ed, 2px 2px #7ce4ed, 3px 3px #7ce4ed;
-    border-radius: 10px;
-    transform: translateX(-3px);
+    box-shadow: 0 3px 0 #7ce4ed;
+    border-radius: 4px;
+    transform: translateY(-3px);
+    top: 3px;
   }
+}
+
+.carousel-img {
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
+}
+
+.carousel-root, .carousel .slide img{
+  width: 70vw;
+  height: 30vw;
+  margin: 0 auto;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: none !important;
+}
+
+.carousel-button {
+  position: absolute;
+  top: calc(50% - 1.75vw);
+  bottom: auto;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.right {
+  left: calc(100% - 4vw);
+}
+
+.carousel .carousel-status {
+  display: none;
 }
 
 .glass {

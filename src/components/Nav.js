@@ -5,7 +5,14 @@ import { Icon } from "atomize";
 import { Breakpoint } from 'react-socks';
 
 const Nav = () => {
-  const nav= ['Anasayfa', 'Hakkımızda', 'Hizmetlerimiz', 'Referanslar', 'İletişim']
+  const navItems= [
+    {name: 'Anasayfa', location: '/Homepage'}, 
+    {name: 'Hakkımızda', location: '/AboutUs'}, 
+    {name: 'Hizmetlerimiz', location: '/Services'}, 
+    {name: 'Referanslar', location: '/References'}, 
+    {name: 'İletişim', location: '/Contacts'}
+  ]
+
   return (
     <nav>
       <Div 
@@ -33,7 +40,7 @@ const Nav = () => {
           />
           <Text 
             p="0 0 0 0.75rem" 
-            tag="body" 
+            tag="p" 
             textSize="body" 
             textColor="alpha"
           >
@@ -45,26 +52,26 @@ const Nav = () => {
           w="auto"
           h="10vh"
           p="1rem"
-          alignSelf="flex-end"
           align="center"
-          className="glass"
         >
-          {nav.map(item => {
+          {navItems.map((item,idx) => {
             return (
-              <Text 
-                className="nav-hover" 
-                m="0 0.5rem" 
-                textSize="h3"
-                p={{lg: "0.25rem 0.5rem", xl: "0.25rem 0.75rem" }}
-              >
-                <Anchor     
+              <Link
+                key={idx}
+                href={item.location}
+                as="/"
+              > 
+                <Text 
+                  className="nav-hover" 
+                  m="0 0.5rem" 
+                  textSize="h3"
                   textColor="alpha"
                   hoverTextColor="primaryBlue" 
-                  href={`#${item.toLowerCase()}`}
-                > 
-                  {item}
-                </Anchor>
-              </Text>
+                  p={{lg: "0.25rem 0.5rem", xl: "0.25rem 0.75rem" }}
+                >
+                  {item.name}
+                </Text>
+              </Link>
             );
           })}
         </Div>

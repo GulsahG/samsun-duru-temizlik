@@ -21,6 +21,8 @@
     "next-seo": "^4.24.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-magnifier": "^3.0.4",
+    "react-responsive-carousel": "^3.2.19",
     "react-socks": "^2.2.0",
     "react-transition-group": "^4.4.1",
     "responsive-loader": "^2.3.0",
