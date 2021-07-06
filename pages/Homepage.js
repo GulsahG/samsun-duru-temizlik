@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Text, Div, Image, Icon } from 'atomize';
 import Gallery from '../src/components/Gallery';
+import AboutUs from './AboutUs';
 
 const Homepage = () => {
+  const [animation, setAnimation] = useState(true);
+
+  useEffect(() => {
+    if(window.sessionStorage.getItem("firstLoadDone") === null) {
+      setAnimation(true);
+
+      window.sessionStorage.setItem("firstLoadDone", 1)
+    }
+    else {
+      setAnimation(false);
+    }
+  });
   return (
     <>
       <Text 
@@ -10,14 +23,15 @@ const Homepage = () => {
         w="92.5vw"
         m="1.5vh auto 5vh auto"
         fontFamily="secondary" 
-        textSize="h2" 
+        textSize="h1" 
         textColor="primaryBlue"
         textAlign="center"
-        className="typing"
+        className={animation ? "typing" : ""}
       >
         samsun duru temizlik
       </Text>
       <Gallery />
+      <AboutUs />
     </>
   );  
 }

@@ -15,7 +15,7 @@ body {
              animated-cursor 500ms ease-in 5s 1 forwards;
 }
 
-@keyframes animated-text{
+@keyframes animated-text {
   from {
     width: 0;
   }
@@ -24,7 +24,7 @@ body {
   }
 }
 
-@keyframes animated-cursor{
+@keyframes animated-cursor {
   from {
     border-right-color: #359353;
   }
@@ -54,9 +54,6 @@ body {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border: 2px groove #fff;
-  -moz-box-shadow: 0px -0.5vw 2vw #ccc;
-  -webkit-box-shadow: 0px -0.5vw 2vw #ccc;
-  box-shadow: 0px -0.5vw 2vw #ccc;
 }
 
 .carousel-root, .carousel .slide img {
@@ -109,4 +106,36 @@ body {
     0 2px 1px hsla(0, 0%, 100%, 0.5) inset,
     0 -2px 1px hsla(250, 70%, 5%, 0.3) inset,
     0 -2px 6px hsla(0, 0%, 100%, 0.25);
+}
+
+.quote {
+  background-image: url("../src/images/blob-bg2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+  >h2 {
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b3e4c3,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+  }
+
+  >p {
+  font-style: italic;
+    >b {
+      text-shadow: 
+      1px 0px 0px #ccc, 0px 1px 0px #eee, 
+      2px 1px 0px #ccc, 1px 2px 0px #eee,
+      3px 2px 0px #ccc, 2px 3px 0px #eee,
+      4px 3px 0px #ccc;
+    }
+  }
 }
