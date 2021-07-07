@@ -1,6 +1,16 @@
-/*html {
+html {
   overflow-x: hidden;
-}*/
+}
+
+.no-fouc {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.fouc {
+  visibility: visible;
+  opacity: 1;
+}
 
 body {
   width: 100vw;
@@ -91,7 +101,8 @@ body {
 }
 
 .glass {
-  backdrop-filter: contrast(130%) brightness(120%) blur(2px);
+  filter: contrast(130%) brightness(120%);
+  -webkit-filter: contrast(130%) brightness(120%);
   background:
     radial-gradient(
       ellipse at 16.7% -10%,
@@ -103,16 +114,29 @@ body {
   background-size: 300% 100%;
   border-radius: 10px;
   box-shadow:
-    0 2px 1px hsla(0, 0%, 100%, 0.5) inset,
-    0 -2px 1px hsla(250, 70%, 5%, 0.3) inset,
-    0 -2px 6px hsla(0, 0%, 100%, 0.25);
+    2px 3px 2px hsla(0, 0%, 100%, 0.5) inset,
+    -2px -3px 2px hsla(250, 70%, 5%, 0.3) inset,
+    -2px -3px 8px hsla(0, 0%, 100%, 0.25);
 }
+
+/*@keyframes unblur { 
+  to { 
+    filter: blur(0); 
+    -webkit-filter: blur(0); 
+  } 
+}
+@keyframes blur { 
+  to { 
+    filter: blur(3px);
+    -webkit-filter: blur(3px); 
+  } 
+}*/
 
 .quote {
   background-image: url("../src/images/blob-bg2.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 300% 300%;
+  background-size: 100vw 75vw;
   >h2 {
     text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
@@ -131,11 +155,30 @@ body {
   >p {
   font-style: italic;
     >b {
-      text-shadow: 
-      1px 0px 0px #ccc, 0px 1px 0px #eee, 
-      2px 1px 0px #ccc, 1px 2px 0px #eee,
-      3px 2px 0px #ccc, 2px 3px 0px #eee,
-      4px 3px 0px #ccc;
+      text-decoration: underline 0.15em #b3e4c3; 
+      text-underline-offset: 0.3em;
+      transition: text-decoration-color 300ms, text-underline-offset 300ms;
+      &:hover {
+        text-decoration-color: #359353;
+        text-underline-offset: 0.4em;
+      }
     }
+  }
+}
+
+.about-us {
+  >h2 {
+    text-shadow: 
+    1px 1px 2px rgba(124, 228, 237, 0.75),
+    1px 1px 2px rgba(0,0,0, 0.5);
+    display: inline;
+    background-image: linear-gradient(90deg, #7ce4ed 100%, transparent 100%);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 0% 4px;
+    transition: all 2s ease;
+  }
+  .underline {
+    background-size: 110% 4px;
   }
 }

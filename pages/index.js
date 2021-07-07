@@ -1,10 +1,20 @@
-import React from 'react';
+import React , { useEffect } from 'react';
 import { NextSeo } from 'next-seo';
 import Homepage from './Homepage';
 
 const IndexPage = () => {
+  // gets rid of the flash of unstyled elements
+  useEffect(() => {
+    const removeFouc = (foucElement) => {
+      if(foucElement)
+        foucElement.className = foucElement.className.replace('no-fouc', 'fouc');
+    };
+
+    removeFouc(document.querySelector('.no-fouc'));
+  }, []);
+
   return (
-    <div>
+    <div className="no-fouc">
       <NextSeo
         title="Samsun Duru Temizlik"
         description="Samsun Duru Temizlik Samsun'un her yerinde ev, ofis temizliği servisi veriyor."

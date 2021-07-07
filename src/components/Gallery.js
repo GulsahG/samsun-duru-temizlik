@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Magnifier from 'react-magnifier';
 import { Icon, Image } from 'atomize';
 import { Carousel } from 'react-responsive-carousel';

@@ -21,7 +21,7 @@ const MyApp = ({ Component, pageProps }) => {
     },
     textSize: {
       size: {
-        h1: "62px",
+        h1: "56px",
         h2: "42px",
         h3: "24px",
         body: "18px",

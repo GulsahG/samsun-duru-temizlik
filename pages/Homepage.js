@@ -16,6 +16,7 @@ const Homepage = () => {
       setAnimation(false);
     }
   });
+
   return (
     <>
       <Text 

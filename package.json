@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "atomize": "^1.0.26",
+    "compress-images": "^1.9.9",
     "dotenv-load": "^2.0.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
