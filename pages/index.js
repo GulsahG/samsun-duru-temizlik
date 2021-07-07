@@ -3,7 +3,7 @@ import { NextSeo } from 'next-seo';
 import Homepage from './Homepage';
 
 const IndexPage = () => {
-  // gets rid of the flash of unstyled elements
+  /* gets rid of the flash of unstyled elements
   useEffect(() => {
     const removeFouc = (foucElement) => {
       if(foucElement)
@@ -11,10 +11,10 @@ const IndexPage = () => {
     };
 
     removeFouc(document.querySelector('.no-fouc'));
-  }, []);
+  }, []);*/
 
   return (
-    <div className="no-fouc">
+    <div>
       <NextSeo
         title="Samsun Duru Temizlik"
         description="Samsun Duru Temizlik Samsun'un her yerinde ev, ofis temizliği servisi veriyor."
