@@ -31,6 +31,7 @@ const AboutUs = () => {
         className="quote"
         p="5vh 0"
         align="center"
+        style={{backgroundImage: `url(${"./blob.svg"})`}}
       >
         <Text 
           tag="h2"
