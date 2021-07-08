@@ -23,7 +23,7 @@ const Nav = () => {
           align="center"
         >
           <Image 
-            w="12.5vw" 
+            w="auto" 
             h="15vh" 
             p="1.25vh 1vw"
             src={require('../images/logo.svg')} 

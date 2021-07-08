@@ -1,16 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Div, Text } from 'atomize';
 import Homepage from './Homepage';
 
-
 const AboutUs = () => {
   const [scroll, setScroll] = useState(false);
+  let isRendered = useRef(false);
+
   useEffect(() => {
+    isRendered = true;
     const el = document.querySelector('.header');
     window.addEventListener("scroll", () => {
-      setScroll( el.getBoundingClientRect().bottom <= window.innerHeight);
+      if(isRendered)
+        setScroll(el.getBoundingClientRect().bottom <= window.innerHeight);
     });
+
+    return () => {
+      isRendered = false;
+      setScroll(false);
+    }
   }, []);
+  
 
   return (
     <Div>

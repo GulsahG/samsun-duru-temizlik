@@ -53,7 +53,7 @@ const MobileNav = ({ navItems }) => {
     <Div d="flex" align="center">
       <Image 
         w={{xs:"30vw", md:"20vw"}} 
-        h="15vh" 
+        h="auto" 
         p="1.25vh 1vw"
         src={require('../images/logo.svg')} 
         alt="Samsun Duru Temizlik logo"

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Magnifier from 'react-magnifier';
 import { Icon, Image } from 'atomize';
 import { Carousel } from 'react-responsive-carousel';
@@ -6,13 +6,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 
 const Gallery = () => {
   const images = [
-    {src: require(`../images/supplies.jpg?webp`), alt: 'Samsun Duru Temizlik, temizlik ürünleri'},
-    {src: require(`../images/gloves.jpg?webp`), alt: 'Samsun temizlik şirketi elemanı'},
-    {src: require(`../images/bucket.jpg?webp`), alt: 'Temizlik ürünleri dolu vileda sepeti'},
-    {src: require(`../images/spray.jpg?webp`), alt: 'Samsun temizlik şirketi elemanı'},
-    {src: require(`../images/vacuum.jpg?webp`), alt: 'Samsun ev temizliği süpürme'},
-    {src: require(`../images/sink.jpg?webp`), alt: 'Samsun ev lavabo temizliği'},
-    {src: require(`../images/cleaning.jpg?webp`), alt: 'Samsun ev banyo temizliği'}
+    {src: require(`../images/supplies-min.jpg?webp`), alt: 'Samsun Duru Temizlik, temizlik ürünleri'},
+    {src: require(`../images/gloves-min.jpg?webp`), alt: 'Samsun temizlik şirketi elemanı'},
+    {src: require(`../images/bucket-min.jpg?webp`), alt: 'Temizlik ürünleri dolu vileda sepeti'},
+    {src: require(`../images/spray-min.jpg?webp`), alt: 'Samsun temizlik şirketi elemanı'},
+    {src: require(`../images/vacuum-min.jpg?webp`), alt: 'Samsun ev temizliği süpürme'},
+    {src: require(`../images/sink-min.jpg?webp`), alt: 'Samsun ev lavabo temizliği'},
+    {src: require(`../images/cleaning-min.jpg?webp`), alt: 'Samsun ev banyo temizliği'}
   ]
 
   return (
