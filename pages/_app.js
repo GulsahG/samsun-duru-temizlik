@@ -51,8 +51,8 @@ const MyApp = ({ Component, pageProps }) => {
     <StyletronProvider value={styletron}>
       <ThemeProvider theme={theme}>
         <BreakpointProvider>
-          <StyleReset />
           <script>0</script>
+          <StyleReset />
           <Nav />
           <Component {...pageProps} />
         </BreakpointProvider>
