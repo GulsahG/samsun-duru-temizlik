@@ -1,6 +1,5 @@
 import '../styles/fonts.sass';
 import '../styles/style.scss';
-import Head from 'next/head';
 import Nav from '../src/components/Nav';
 import  { BreakpointProvider } from 'react-socks';
 import { ThemeProvider, StyleReset } from 'atomize';
@@ -53,13 +52,7 @@ const MyApp = ({ Component, pageProps }) => {
       <ThemeProvider theme={theme}>
         <BreakpointProvider>
           <StyleReset />
-          <Head>
-            <link rel="shortcut icon" href="/favicon.ico" />
-            <script>
-              /*to prevent Firefox FOUC, this must be here*/
-              let FF_FOUC_FIX;
-            </script>
-          </Head>
+          <script>0</script>
           <Nav />
           <Component {...pageProps} />
         </BreakpointProvider>

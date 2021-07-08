@@ -13,5 +13,9 @@ module.exports = withPlugins([
   [optimizedImages, {
     /* config for next-optimized-images */
   }],
-
+  {
+    images: {
+      disableStaticImages: true
+    }
+  }
 ]);

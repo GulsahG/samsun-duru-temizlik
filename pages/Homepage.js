@@ -15,11 +15,6 @@ const Homepage = () => {
     else {
       setAnimation(false);
     }
-
-    return () => {
-      setAnimation(true);
-      window.sessionStorage.setItem("firstLoadDone", null);
-    }
   });
 
   return (
