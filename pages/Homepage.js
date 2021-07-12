@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Text, Div, Image, Icon } from 'atomize';
 import Gallery from '../src/components/Gallery';
 import AboutUs from './AboutUs';
+import Phone from '../src/components/Phone';
 
 const Homepage = () => {
   const [animation, setAnimation] = useState(true);
@@ -33,6 +34,7 @@ const Homepage = () => {
       </Text>
       <Gallery />
       <AboutUs />
+      <Phone />
     </>
   );  
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import Magnifier from 'react-magnifier';
 import { Icon, Image } from 'atomize';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
