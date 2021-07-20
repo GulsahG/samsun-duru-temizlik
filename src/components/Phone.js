@@ -12,11 +12,13 @@ const Phone = () => {
       bg="accentBlue"
     >
       <Text 
-        w="40%"
+        w="20%"
         tag="h2"
         textSize="h2"
         textAlign="center"
-        p="0 2.5%"
+        p="2.5% 15%"
+        className="phone-text"
+        style={{backgroundImage: `url(${"./blob3.svg"})`}}
       >
         Fiyat teklifi ve randevu almak için bize ulaşın!
       </Text>

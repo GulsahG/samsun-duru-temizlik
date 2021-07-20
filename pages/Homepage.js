@@ -19,7 +19,9 @@ const Homepage = () => {
   });
 
   return (
-    <>
+    <Div
+      p="20vh 0"
+    >
       <Text 
         tag="h1" 
         w="92.5vw"
@@ -35,7 +37,7 @@ const Homepage = () => {
       <Gallery />
       <AboutUs />
       <Phone />
-    </>
+    </Div>
   );  
 }
 

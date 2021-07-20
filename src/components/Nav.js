@@ -14,13 +14,14 @@ const Nav = () => {
   ]
 
   return (
-    <nav>
+    <nav style={{ position: "fixed", zIndex: "100" }}>
       <Breakpoint large up>
         <Div 
           d="flex"
           w="100vw"
           h="17.5vh"
           align="center"
+          bg="white"
         >
           <Image 
             w="auto" 
@@ -42,7 +43,7 @@ const Nav = () => {
               align="center"
             >
               <Icon 
-                name="Checked" 
+                name="Message" 
                 size="20px" 
                 color="primaryGreen"
               />
@@ -52,7 +53,7 @@ const Nav = () => {
                 textSize="body" 
                 textColor="alpha"
               >
-                7/24 Hizmete Açığız
+                7/24 Hizmete Açığız <br /> +90 0532 300 71 52
               </Text>
             </Div>
             <Div 

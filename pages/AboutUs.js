@@ -22,14 +22,16 @@ const AboutUs = () => {
   
 
   return (
-    <Div>
+    <Div
+      p="10vh 0 5vh 0"
+    >
       <Div
         m="10vh auto"
         d="flex"
         flexDir="column"
         w="92.5vw"
         className="quote"
-        p="5vh 0"
+        p="2.5vh 0"
         align="center"
         style={{backgroundImage: `url(${"./blob.svg"})`}}
       >
@@ -76,6 +78,7 @@ const AboutUs = () => {
           m="2vh auto"
           textAlign="justify"
           className="glass"
+          bg="rgba(38, 38, 42, 0.025)"
           p="2vw"
         >
           Samsun Duru Temizlik olarak, sizler için 8 senedir hizmet veriyoruz. Müşteri memnuniyetini her zaman ön planda tutmakla beraber, bütün temizlik hizmetlerini
