@@ -52,8 +52,9 @@ const Nav = () => {
                 tag="p" 
                 textSize="body" 
                 textColor="alpha"
+                className="phone-number"
               >
-                7/24 Hizmete Açığız <br /> +90 0532 300 71 52
+                7/24 Hizmete Açığız <br /><Anchor href="tel:+9005323007152" textColor="primaryBlue">+90 0532 300 71 52</Anchor>
               </Text>
             </Div>
             <Div 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Div, Button, SideDrawer, Icon, Text, Image } from "atomize";
+import { Div, Button, SideDrawer, Icon, Text, Image, Anchor } from "atomize";
 import Link from 'next/link';
 
 const Drawer = ({ isOpen, onClose, navItems }) => {
@@ -50,7 +50,7 @@ const Drawer = ({ isOpen, onClose, navItems }) => {
 const MobileNav = ({ navItems }) => {
   const [showSideDrawer, setSideDrawer] = useState(false);
   return (
-    <Div d="flex" align="center">
+    <Div d="flex" align="center" w="100vw" justify="space-between">
       <Image 
         w={{xs:"30vw", md:"20vw"}} 
         h="auto" 
@@ -58,6 +58,20 @@ const MobileNav = ({ navItems }) => {
         src={require('../images/logo.svg')} 
         alt="Samsun Duru Temizlik logo"
       />
+      <Text 
+        p="0 0 0 0.75rem" 
+        tag="p" 
+        textSize="h3" 
+        textColor="alpha"
+        className="phone-number"
+      >
+        <Icon 
+          name="Message" 
+          size="30px" 
+          color="primaryGreen"
+        />
+        <Anchor href="tel:+9005323007152" textColor="primaryBlue">+90 0532 300 71 52</Anchor>
+      </Text>
       <Button
         m={{ r: "0.5rem" }}
         onClick={() => setSideDrawer(true)}

@@ -51,10 +51,13 @@ const Services = () => {
               border="2px solid" 
               textColor="alpha"
               m="0 0.5vw"
+              p="1.5vw"
               hoverBg="primaryGreen"
               hoverTextColor="white"
               textAlign="center"
               onClick={() => setActiveElement(idx)}
+              textSize="body"
+              className="service-title"
               >
               {service.title}
             </Button>
@@ -65,13 +68,13 @@ const Services = () => {
       {services.map((service, idx) => {
         return <Text 
           key={idx}
-          className={activeElement === idx ? "" : "disabled"}
+          className={activeElement === idx ? "enabled" : "disabled"}
           w="50vw"
           minH="30vh"
           h="auto"
           tag="p"
           textSize="body"
-          m="10vw auto"
+          m="7.5vw auto"
           textAlign="justify"
         >
           {service.text}

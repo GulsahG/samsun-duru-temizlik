@@ -16,10 +16,17 @@ body {
   width: 100vw;
 }
 
+h1 {
+  text-shadow: 0 1px 0 rgba(38, 38, 42, 0.5);
+}
+
 .typing {
   overflow: hidden; 
   border-right: .10em solid #359353; 
   white-space: nowrap; 
+  -webkit-animation: animated-text 4s linear 1s 1 normal both,
+             animated-cursor 600ms linear 7,
+             animated-cursor 500ms ease-in 5s 1 forwards;
   animation: animated-text 4s linear 1s 1 normal both,
              animated-cursor 600ms linear 7,
              animated-cursor 500ms ease-in 5s 1 forwards;
@@ -34,7 +41,25 @@ body {
   }
 }
 
+@-webkit-keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50vw;
+  }
+}
+
 @keyframes animated-cursor {
+  from {
+    border-right-color: #359353;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@-webkit-keyframes animated-cursor {
   from {
     border-right-color: #359353;
   }
@@ -53,6 +78,10 @@ body {
     transform: translateY(-3px);
     top: 3px;
   }
+}
+
+.phone-number>a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤙</text></svg>"), auto;
 }
 
 .carousel-img {
@@ -85,6 +114,7 @@ body {
 }
 
 .carousel-button {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👈</text></svg>"), auto;
   position: absolute;
   top: calc(60% - 1.75vw);
   bottom: auto;
@@ -93,6 +123,7 @@ body {
 }
 
 .right {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👉</text></svg>"), auto;
   left: calc(100% - 4.25vw);
 }
 
@@ -168,8 +199,8 @@ body {
 .about-us {
   >h2 {
     text-shadow: 
-    1px 1px 2px rgba(124, 228, 237, 0.75),
-    1px 1px 2px rgba(0,0,0, 0.5);
+      1px 1px 2px rgba(124, 228, 237, 0.75),
+      1px 1px 2px rgba(38, 38, 42, 0.5);
     display: inline;
     background-image: linear-gradient(90deg, #7ce4ed 100%, transparent 100%);
     background-position: bottom;
@@ -213,8 +244,29 @@ body {
   }
 }
 
+
+.service-title {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👇</text></svg>"), auto !important;
+}
+
+.enabled {
+  display: block;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
 .disabled {
   display: none;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .phone-text {
@@ -226,4 +278,34 @@ body {
     3px 2px 1px #ccc, 2px 3px 1px #eee,
     4px 3px 1px #ccc, 3px 4px 1px #eee,
     5px 4px 1px #ccc;
+}
+
+.references {
+  h2 {
+    text-shadow: 
+      1px 1px 2px rgba(179, 228, 195, 0.75),
+      1px 1px 2px rgba(38, 38, 42, 0.5);
+  }
+}
+
+.reference {
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(130%) brightness(120%) saturate(180%);
+  -webkit-filter: contrast(130%) brightness(120%) saturate(180%);
+  border-radius: 10px;
+  box-shadow:
+    2px 3px 2px hsla(0, 0%, 100%, 0.5) inset,
+    -2px -3px 2px hsla(250, 70%, 5%, 0.3) inset,
+    -2px -3px 8px hsla(0, 0%, 100%, 0.25);
+  div>h3 {
+    text-shadow: 0 1px 0 rgba(38, 38, 42, 0.5);
+  }
+  a {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🖱️</text></svg>"), auto;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
 }
