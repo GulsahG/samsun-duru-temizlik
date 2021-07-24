@@ -6,7 +6,7 @@ const Phone = () => {
     <Div
       d="flex"
       w="100%"
-      m="5vh auto"
+      m="7.5vh auto 0 auto"
       align="center"
       justify="center"
       bg="accentBlue"

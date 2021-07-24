@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.4.5",
     "atomize": "^1.0.26",
     "babel-preset-next": "^1.4.0",
     "compress-images": "^1.9.9",

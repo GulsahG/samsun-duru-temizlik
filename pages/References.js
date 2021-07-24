@@ -28,7 +28,7 @@ const References = () => {
         En Büyük Destekçilerimiz
       </Text>
       <Div
-        m="0 auto"
+        m="2.5vh auto"
         d="flex"
         flexWrap="wrap"
         align="center"

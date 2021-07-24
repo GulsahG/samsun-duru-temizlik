@@ -3,6 +3,8 @@ import { Text, Div, Image, Icon } from 'atomize';
 import Gallery from '../src/components/Gallery';
 import AboutUs from './AboutUs';
 import Phone from '../src/components/Phone';
+import Contacts from './Contacts';
+import Footer from '../src/components/Footer';
 
 const Homepage = () => {
   const [animation, setAnimation] = useState(true);
@@ -20,7 +22,7 @@ const Homepage = () => {
 
   return (
     <Div
-      p="20vh 0"
+      p="20vh 0 0 0"
     >
       <Text 
         tag="h1" 
@@ -37,6 +39,8 @@ const Homepage = () => {
       <Gallery />
       <AboutUs />
       <Phone />
+      <Contacts />
+      <Footer />
     </Div>
   );  
 }
