@@ -332,3 +332,19 @@ h1 {
     -2px -3px 2px hsla(250, 70%, 5%, 0.3) inset,
     -2px -3px 8px hsla(0, 0%, 100%, 0.25);
 }
+
+.clown-logo {
+  animation: spin 800ms ease infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ @-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

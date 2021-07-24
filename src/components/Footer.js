@@ -1,14 +1,50 @@
-import { Div, Image, Text } from 'atomize';
+import { Anchor, Div, Image, Text } from 'atomize';
 import React from 'react';
 
 const Footer = () => {
   return (
     <footer>
+      <Div
+        d="flex"
+        justify="space-between"
+        align="center"
+        p="1rem 3rem 1rem 1rem"
+      >
+        <Text
+          tag="p"
+          textSize="body"
+          textColor="alpha"
+          m="6rem 0 0 0"
+        >
+          Tüm hakları saklıdır © 2021 \ Samsun Duru Temizlik <br />
+        </Text>
+        <Div
+          d="flex"
+          align="center"
+          flexDir="column"
+        >
+          <Image 
+            w="2.5rem" 
+            h="2.5rem" 
+            m="2.5rem 0 0 0"
+            src={require('../images/clown-logo.svg')} 
+            alt="Designer logo"
+            className="clown-logo"
+          />
+          <Text
+            tag="p"
+            textSize="body"
+            textColor="alpha"
+            p="1rem 1rem 0 1rem"
+          >
+            Design by <Anchor textColor="alpha" hoverTextColor="primaryGreen" target="_blank" href="https://portfolio-page-gulsahg.vercel.app/">Gülşah Genç</Anchor>
+          </Text>
+        </Div>
+      </Div>
     <Div
       d="flex"
       w="auto"
       h="35vh"
-      m="5vh 0 0 0"
       bg="primaryGreen"
       align="center"
       justify="center"
@@ -52,7 +88,7 @@ const Footer = () => {
           tag="p"
           textSize="body"
           textColor="white"
-          style={{ lineHeight: "2" }}
+          style={{ lineHeight: "2.5" }}
           textAlign="center"
         >
           Ev-Ofis temizliği <br />
@@ -67,7 +103,6 @@ const Footer = () => {
         flexDir="column"
         align="center"
         justify="space-between"
-        h="35vh"
         p="2rem"
       >
         <Text
@@ -82,7 +117,7 @@ const Footer = () => {
           tag="p"
           textSize="body"
           textColor="white"
-          style={{ lineHeight: "2.5" }}
+          style={{ lineHeight: "3" }}
           textAlign="center"
         >
           <b>Telefon:</b> +90 0532 300 71 52 <br />
@@ -93,7 +128,6 @@ const Footer = () => {
         d="flex"
         flexGrow="3"
         flexDir="column"
-        align="center"
         justify="space-between"
         h="35vh"
         p="2rem"
@@ -103,6 +137,7 @@ const Footer = () => {
           textSize="h3"
           textColor="white"
           textWeight="bold"
+          textAlign="center"
         >
           Çalışma Koşulları
         </Text>
@@ -116,6 +151,7 @@ const Footer = () => {
           Şirketimiz haftanın her günü <b>8:30 ile 19:30</b> saatleri arasında,  
           <b> Atakum, İlkadım, Çarşamba, Canik, Terme, Bafra</b> başta olmak üzere birçok 
           ilçede hizmet vermektedir.
+          <br />
         </Text>
       </Div>
     </Div>
