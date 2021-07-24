@@ -18,7 +18,7 @@ const Phone = () => {
         textAlign="center"
         p="2.5% 15%"
         className="phone-text"
-        style={{backgroundImage: `url(${"./blob3.svg"})`}}
+        style={{backgroundImage: `url(${"./blob2.svg"})`}}
       >
         Fiyat teklifi ve randevu almak için bize ulaşın!
       </Text>
