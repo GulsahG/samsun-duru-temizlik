@@ -8,7 +8,7 @@ const Footer = () => {
         d="flex"
         justify="space-between"
         align="center"
-        p="1rem 3rem 1rem 1rem"
+        p="1rem 2.5rem 1rem 1rem"
       >
         <Text
           tag="p"
@@ -93,8 +93,8 @@ const Footer = () => {
         >
           Ev-Ofis temizliği <br />
           İnşaat sonrasi temizliği <br />
-          Kafe/Restoran temizliği <br /> 
-          Otel/Yurt temizliği <br />
+          Kafe / Restoran temizliği <br /> 
+          Otel / Yurt temizliği <br />
         </Text>
       </Div>
       <Div

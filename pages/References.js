@@ -5,7 +5,7 @@ const References = () => {
   const referenceList = [
     {name: "Legend Hotel Ayvacık", location: "https://goo.gl/maps/odYf2vqaMq6Kh6pH8", addr:"Orhangazi, Yolu 17th Km., 55200, Ayvacık/Samsun"},
     {name: "Starbucks Coffee", location: "https://goo.gl/maps/rBkMmEefhRN1dsy87", addr:"Cumhuriyet, Adnan Menderes Blv. No:367, 55200 Atakum/Samsun"},
-    {name: "Beyaz Ev", location: "https://goo.gl/maps/uogwkfd25KW84Jvx5", addr:"Cumhuriyet, Alparslan Blv. No:24, 55000 Atakum/Samsun"},
+    {name: "Nisantası Pastanesi", location: "https://g.page/nisantasipastanesi?share", addr:"Yeni Mahalle, Ali Gaffar Okkan Cd. No:21, 55270 Atakum/Samsun"},
     {name: "1453 Insaat", location: "https://goo.gl/maps/DQf3fGbQoqGSEBMw7", addr:"Yenimahalle, 3130. Sk. NO:43, 55270 Atakum/Samsun"},
     {name: "Baran Plaza", location: "https://goo.gl/maps/RHsToZ6ZEXZbnNCg7", addr:"Bahçelievler, İstiklal Cd. No: 242/6, 55070 İlkadım/Samsun"},
   ]
