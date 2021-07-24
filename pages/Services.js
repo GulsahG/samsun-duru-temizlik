@@ -21,11 +21,11 @@ const Services = () => {
     <Div
       w="90vw"
       m="0 auto"
-      p="5vh 0 2.5vh 0"
       d="flex"
       flexDir="column"
       align="center"
       justify="center"
+      id="services"
     >
       <Div
         w="100%"

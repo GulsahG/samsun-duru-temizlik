@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
-import { Image, Div, Anchor, Text, Icon } from 'atomize';
+import { Image, Div, Anchor, Text, Icon, Button, scrollTo } from 'atomize';
 import { Breakpoint } from 'react-socks';
 import MobileNav from './MobileNav';
 
 const Nav = () => {
   const navItems= [
-    {name: 'Anasayfa', location: '/Homepage'}, 
-    {name: 'Hakkımızda', location: '/AboutUs'}, 
-    {name: 'Hizmetlerimiz', location: '/Services'}, 
-    {name: 'Referanslar', location: '/References'}, 
-    {name: 'İletişim', location: '/Contacts'}
+    {name: 'Anasayfa', location: '#gallery'}, 
+    {name: 'Hakkımızda', location: '#about-us'}, 
+    {name: 'Hizmetlerimiz', location: '#services'}, 
+    {name: 'Referanslar', location: '.references'}, 
+    {name: 'İletişim', location: '.contacts'}
   ]
 
   return (
@@ -66,10 +65,10 @@ const Nav = () => {
             >
               {navItems.map((item,idx) => {
                 return (
-                  <Link
+                  <Button
                     key={idx}
-                    href={item.location}
-                    as="/"
+                    onClick={() => scrollTo(item.location, 100, 0, 800)}
+                    bg="white"
                   > 
                     <Text 
                       className="nav-hover" 
@@ -81,7 +80,7 @@ const Nav = () => {
                     >
                       {item.name}
                     </Text>
-                  </Link>
+                  </Button>
                 );
               })}
             </Div>

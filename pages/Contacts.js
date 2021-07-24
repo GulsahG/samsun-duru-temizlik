@@ -7,7 +7,7 @@ const Contacts = () => {
     <Div
       w="90vw"
       m="0 auto"
-      p="17.5vh 0 5vh 0"
+      p="5vh 0"
       d="flex"
       flexDir="column"
       align="center"

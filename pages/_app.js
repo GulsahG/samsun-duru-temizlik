@@ -6,6 +6,7 @@ import  { BreakpointProvider } from 'react-socks';
 import { ThemeProvider, StyleReset } from 'atomize';
 import { Provider as StyletronProvider } from "styletron-react";
 import { styletron, debug } from "../helpers/styletron";
+import Homepage from './Homepage';
 
 const MyApp = ({ Component, pageProps }) => {
   const theme = {
@@ -80,6 +81,7 @@ const MyApp = ({ Component, pageProps }) => {
             }}
           />
           <Nav />
+          <Homepage />
           <Component {...pageProps} />
         </BreakpointProvider>
       </ThemeProvider>

@@ -3,7 +3,7 @@ import Homepage from './Homepage';
 
 const IndexPage = () => {
   return (
-    <Homepage />
+    <></>
   );
 };
 

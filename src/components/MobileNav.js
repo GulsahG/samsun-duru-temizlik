@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Div, Button, SideDrawer, Icon, Text, Image, Anchor } from "atomize";
-import Link from 'next/link';
+import { Div, Button, SideDrawer, Icon, Text, Image, Anchor, scrollTo } from "atomize";
 
 const Drawer = ({ isOpen, onClose, navItems }) => {
   return (
@@ -18,16 +17,17 @@ const Drawer = ({ isOpen, onClose, navItems }) => {
         d="flex" 
         flexDir="column" 
         m={{ b: "4rem" }}
+        h="90vh"
         p="2rem"
         justify="space-evenly"
         align="center"
       >
         {navItems.map((item,idx) => {
           return (
-            <Link
+            <Button
               key={idx}
-              href={item.location}
-              as="/"
+              onClick={() => scrollTo(item.location, 100, 0, 800)}
+              bg="white"
             > 
               <Text 
                 className="nav-hover" 
@@ -39,7 +39,7 @@ const Drawer = ({ isOpen, onClose, navItems }) => {
               >
                 {item.name}
               </Text>
-            </Link>
+            </Button>
           );
         })}
       </Div>
@@ -50,7 +50,13 @@ const Drawer = ({ isOpen, onClose, navItems }) => {
 const MobileNav = ({ navItems }) => {
   const [showSideDrawer, setSideDrawer] = useState(false);
   return (
-    <Div d="flex" align="center" w="100vw" justify="space-between">
+    <Div 
+      d="flex" 
+      align="center" 
+      w="100vw" 
+      justify="space-between" 
+      bg="white"
+    >
       <Image 
         w={{xs:"30vw", md:"20vw"}} 
         h="auto" 

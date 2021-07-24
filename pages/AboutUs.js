@@ -23,7 +23,8 @@ const AboutUs = () => {
 
   return (
     <Div
-      p="10vh 0 5vh 0"
+      p="5vh 0"
+      id="about-us"
     >
       <Div
         m="10vh auto"

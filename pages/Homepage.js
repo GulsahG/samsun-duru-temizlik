@@ -4,6 +4,8 @@ import Gallery from '../src/components/Gallery';
 import AboutUs from './AboutUs';
 import Phone from '../src/components/Phone';
 import Contacts from './Contacts';
+import Services from './Services';
+import References from './References';
 import Footer from '../src/components/Footer';
 
 const Homepage = () => {
@@ -23,6 +25,7 @@ const Homepage = () => {
   return (
     <Div
       p="20vh 0 0 0"
+      id="gallery"
     >
       <Text 
         tag="h1" 
@@ -39,7 +42,9 @@ const Homepage = () => {
       <Gallery />
       <AboutUs />
       <Phone />
+      <Services />
       <Contacts />
+      <References />
       <Footer />
     </Div>
   );  
