@@ -122,9 +122,16 @@ h1 {
   border-radius: 10px;
 }
 
+.left {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👈</text></svg>"), auto;
+  border-radius: 10px;
+
+}
+
 .right {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👉</text></svg>"), auto;
-  left: calc(100% - 4.25vw);
+  border-radius: 10px;
+  left: calc(100% - 4vw);
 }
 
 .carousel .carousel-status {
@@ -293,20 +300,28 @@ h1 {
   background-repeat: no-repeat;
   filter: contrast(130%) brightness(120%) saturate(180%);
   -webkit-filter: contrast(130%) brightness(120%) saturate(180%);
+  border-top: 4px groove rgba(28, 104, 206, 0.7);
+  border-left: 4px groove rgba(28, 104, 206, 0.7);
   border-radius: 10px;
   box-shadow:
-    2px 3px 2px hsla(0, 0%, 100%, 0.5) inset,
-    -2px -3px 2px hsla(250, 70%, 5%, 0.3) inset,
-    -2px -3px 8px hsla(0, 0%, 100%, 0.25);
+    2px 3px 2px 3px hsla(0, 0%, 100%, 0.5) inset,
+    -2px -3px 2px 3px hsla(250, 70%, 5%, 0.3) inset,
+    -2px -3px 8px 3px hsla(0, 0%, 100%, 0.25);
   div>h3 {
     text-shadow: 0 1px 0 rgba(38, 38, 42, 0.5);
   }
+  z-index: 3;
   a {
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🖱️</text></svg>"), auto;
     transition: all 0.3s;
     &:hover {
       transform: scale(1.4);
     }
+  }
+  &:hover {
+    margin: 0 2.5vw;
+    z-index: 5;
+    width: 120%;
   }
 }
 
