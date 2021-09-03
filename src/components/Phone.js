@@ -12,11 +12,11 @@ const Phone = () => {
       bg="accentBlue"
     >
       <Text 
-        w="20%"
+        w={{md: "60%", xl: "20%"}}
         tag="h2"
         textSize="h2"
         textAlign="center"
-        p="2.5% 15%"
+        p={{md: "2.5% 5%", lg: "2.5% 15%"}}
         className="phone-text"
         style={{backgroundImage: `url(${"./blob2.svg"})`}}
       >

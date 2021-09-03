@@ -368,22 +368,4 @@ h1 {
   .quote {
     background-size: 125vw 100vw;
   }
-
-  .enabled {
-    width: 65vw !important;
-  }
-
-  .activeService {
-    width: 90vw;
-    background-size: 90vw auto;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1400px) {
-  /* CSS */
-  .nav-text {
-    display: none !important;
-  }
-
-
 }

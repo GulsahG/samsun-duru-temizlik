@@ -6,7 +6,7 @@ const Contacts = () => {
   return (
     <Div
       w="90vw"
-      m="0 auto"
+      m={{md: "15vh auto 0 auto", lg: "5vh auto 0 auto", xl: "0 auto"}}
       p="5vh 0"
       d="flex"
       flexDir="column"
@@ -31,8 +31,8 @@ const Contacts = () => {
         <Div
           d="flex"
           flexDir="column"
-          w="40vw"
-          m="0 2.5vw 4.5vw 2.5vw"
+          w={{md: "45vw", xl: "40vw"}}
+          m="0 1.25vw 4.5vw 1.25vw"
         >
           <Text
             tag="h3"

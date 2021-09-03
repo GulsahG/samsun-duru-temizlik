@@ -132,18 +132,17 @@ const References = () => {
               p="0 2.5vw"
               w="70vw"
               d="flex"
-              align={{xs: "center", xl: "flex-start"}}
+              align="flex-start"
               justify="center"
               flexWrap="wrap"
-              flexDir={{xs: "column", xl: "row"}}
             >
               {referenceArr[currRefList].map((ref, idx) => {
                 return (
                   <Div
                     className="reference"
-                    minW={{md: "60vw", xl: "15vw"}}
+                    minW="15vw"
                     h="15vh"
-                    m={{md: "2vh 0", xl: "5vh -0.75vw"}}
+                    m="5vh -0.75vw"
                     p="2.5%"
                     d="flex"
                     key={idx}

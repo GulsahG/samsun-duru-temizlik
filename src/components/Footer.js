@@ -26,7 +26,7 @@ const Footer = () => {
           <Image 
             w="2.5rem" 
             h="2.5rem" 
-            m="2.5rem 0 0 0"
+            m={{sm: "2.5rem 0 0 2.5rem", xl: "2.5rem 0 0 1rem"}}
             src={require('../images/clown-logo.svg')} 
             alt="Designer logo"
             className="clown-logo"
@@ -35,7 +35,7 @@ const Footer = () => {
             tag="p"
             textSize="body"
             textColor="alpha"
-            p="1rem 1rem 0 1rem"
+            p={{sm: "1rem 0 0 2rem", xl: "1rem 1rem 0 1rem"}}
           >
             Design by <Anchor textColor="alpha" hoverTextColor="primaryGreen" target="_blank" href="https://portfolio-page-gulsahg.vercel.app/">Gülşah Genç</Anchor>
           </Text>
@@ -44,11 +44,12 @@ const Footer = () => {
     <Div
       d="flex"
       w="auto"
-      h="35vh"
+      h="auto"
       bg="primaryGreen"
       align="center"
       justify="center"
       className="footer"
+      flexDir={{xs: "column", xl: "row"}}
     >
       <Div
         d="flex"
@@ -60,7 +61,7 @@ const Footer = () => {
         h="35vh"
       >
       <Image 
-        w="auto" 
+        w={{xs: "100vw", xl:"auto"}}
         h="10vh" 
         p="1.25vh 1vw"
         src={require('../images/logo2.svg')} 
@@ -74,7 +75,7 @@ const Footer = () => {
         align="center"
         justify="space-between"
         h="35vh"
-        p="2rem"
+        p={{xs: "0.5rem", md: "1rem", xl: "2rem"}}
       >
         <Text
           tag="h3"
@@ -103,7 +104,7 @@ const Footer = () => {
         flexDir="column"
         align="center"
         justify="space-between"
-        p="2rem"
+        p={{xs: "0.5rem", md: "1rem", xl: "2rem"}}
       >
         <Text
           tag="h3"
@@ -130,7 +131,7 @@ const Footer = () => {
         flexDir="column"
         justify="space-between"
         h="35vh"
-        p="2rem"
+        p={{xs: "0.5rem", md: "1rem", xl: "2rem"}}
       >
         <Text
           tag="h3"

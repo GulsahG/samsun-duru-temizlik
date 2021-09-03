@@ -24,14 +24,14 @@ const Nav = () => {
         >
           <Image 
             w="auto" 
-            h="15vh" 
+            h={{md: "7.5vh", xl: "15vh" }}
             p="1.25vh 1vw"
             src={require('../images/logo.svg')} 
             alt="Samsun Duru Temizlik logo"
           />
           <Div 
             d="flex"
-            w="100vw"
+            w={{lg: "85vw", xl: "100vw"}}
             h="17.5vh"
             m="2.5vh 0"
             justify="space-evenly"
@@ -40,6 +40,8 @@ const Nav = () => {
             <Div 
               d="flex" 
               align="center"
+              w="15vw"
+              className="nav-text"
             >
               <Icon 
                 name="Message" 
@@ -76,7 +78,7 @@ const Nav = () => {
                       textSize="h3"
                       textColor="alpha"
                       hoverTextColor="primaryBlue" 
-                      p={{lg: "0.25rem 0.5rem", xl: "0.25rem 0.75rem" }}
+                      p={{lg: "0.25rem 0", xl: "0.25rem 0.75rem" }}
                     >
                       {item.name}
                     </Text>

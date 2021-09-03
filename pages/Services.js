@@ -51,13 +51,14 @@ const Services = () => {
               border="2px solid" 
               textColor="alpha"
               m="0 0.5vw"
-              p="1.5vw"
+              p={{md: "0.25vh 0.5vw", xl: "0.75vh 1.5vw"}}
               hoverBg="primaryGreen"
               hoverTextColor="white"
               textAlign="center"
               onClick={() => setActiveElement(idx)}
               textSize="body"
               className="service-title"
+              h="auto"
               >
               {service.title}
             </Button>
@@ -74,7 +75,7 @@ const Services = () => {
           h="auto"
           tag="p"
           textSize="body"
-          m="7.5vw auto"
+          m={{md: "5vw auto", xl: "7.5vw auto"}}
           textAlign="justify"
         >
           {service.text}

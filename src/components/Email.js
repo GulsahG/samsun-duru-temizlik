@@ -23,8 +23,8 @@ const Email = () => {
 
   return (
     <Div
-      m="5vh 2.5vw"
-      w="40vw"
+      m={{md: "5vh 1vw", xl: "5vh 2.5vw"}}
+      w={{md: "50vw", xl: "40vw"}}
     >
       <form method="post" onSubmit={handleOnSubmit}>
         <Div 
