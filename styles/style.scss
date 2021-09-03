@@ -384,6 +384,11 @@ h1 {
   .nav-text {
     display: none !important;
   }
+}
 
-
+@media (max-width: 1400px) {
+  /* CSS */
+  .typing {
+    animation: none;
+  }
 }

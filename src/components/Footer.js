@@ -66,6 +66,7 @@ const Footer = () => {
         p="1.25vh 1vw"
         src={require('../images/logo2.svg')} 
         alt="Samsun Duru Temizlik logo"
+        style={{objectFit: "contain"}}
       />
       </Div>
       <Div
