@@ -37,7 +37,7 @@ const Footer = () => {
             textColor="alpha"
             p={{sm: "1rem 0 0 2rem", xl: "1rem 1rem 0 1rem"}}
           >
-            Design by <Anchor textColor="alpha" hoverTextColor="primaryGreen" target="_blank" href="https://portfolio-page-gulsahg.vercel.app/">Gülşah Genç</Anchor>
+            Design by <Anchor textColor="alpha" hoverTextColor="primaryGreen" target="_blank" href="https://portfolio-page-gulsahg.vercel.app/" style={{transition: "color 0.3s"}}>Gülşah Genç</Anchor>
           </Text>
         </Div>
       </Div>

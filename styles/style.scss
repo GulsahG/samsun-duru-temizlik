@@ -130,7 +130,7 @@ h1 {
 .right {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👉</text></svg>"), auto;
   border-radius: 10px;
-  left: calc(100% - 4vw);
+  left: calc(100% - 3.5vw);
 }
 
 .carousel .carousel-status {
@@ -377,6 +377,15 @@ h1 {
     width: 90vw;
     background-size: 90vw auto;
   }
+
+  .right, .left {
+    height: 7.5vw;
+    width: 7.5vw;
+  }
+
+  .right {
+    left: calc(100% - 7.5vw);
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1400px) {
@@ -386,9 +395,17 @@ h1 {
   }
 }
 
+@media (min-width: 1024px) {
+  .right, .left {
+    height: 3.5vw;
+    width: 3.5vw;
+  }
+}
+
 @media (max-width: 1400px) {
   /* CSS */
   .typing {
     animation: none;
+    border-right: none;
   }
 }

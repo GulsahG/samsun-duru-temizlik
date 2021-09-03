@@ -126,7 +126,7 @@ const References = () => {
           title="Önceki resim"
           className="left glass"
         >
-          <Icon name="LeftArrow" size="3.5vw" color="primaryGreen" />
+          <Icon name="LeftArrow" size={{sm: "7.5vw", xl: "3.5vw"}} color="primaryGreen" />
         </button>
             <Div
               p="0 2.5vw"
@@ -176,7 +176,7 @@ const References = () => {
           title="Sonraki resim"
           className="right glass"
         >
-          <Icon name="RightArrow" size="3.5vw" color="primaryGreen" />
+          <Icon name="RightArrow" size={{sm: "7.5vw", xl: "3.5vw"}} color="primaryGreen" />
         </button>
       </Div>
       </Div>

@@ -27,9 +27,9 @@ const Gallery = () => {
           type="button"
           onClick={onClickHandler}
           title="Önceki resim"
-          className="carousel-button glass"
+          className="carousel-button glass left"
         >
-          <Icon name="LeftArrow" size="3.5vw" color="primaryGreen" />
+          <Icon name="LeftArrow" size={{sm: "7.5vw", xl: "3.5vw"}} color="primaryGreen" />
         </button>
       )
       }
@@ -41,7 +41,7 @@ const Gallery = () => {
           title="Sonraki resim"
           className="carousel-button right glass"
         >
-          <Icon name="RightArrow" size="3.5vw" color="primaryGreen" />
+          <Icon name="RightArrow" size={{sm: "7.5vw", xl: "3.5vw"}} color="primaryGreen" />
         </button>
       )
       }
