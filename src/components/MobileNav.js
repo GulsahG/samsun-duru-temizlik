@@ -67,23 +67,18 @@ const MobileNav = ({ navItems }) => {
       <Text 
         p="0 0 0 0.75rem" 
         tag="p" 
-        textSize="h3" 
+        textSize={{xs: "body", md: "h3"}}
         textColor="alpha"
         className="phone-number"
       >
-        <Icon 
-          name="Message" 
-          size="30px" 
-          color="primaryGreen"
-        />
-        <Anchor href="tel:+9005323007152" textColor="primaryBlue">+90 0532 300 71 52</Anchor>
+        <Anchor textWeight="bold" href="tel:+9005323007152" textColor="primaryBlue">Hemen Ara! 🤙</Anchor>
       </Text>
       <Button
         m={{ r: "0.5rem" }}
         onClick={() => setSideDrawer(true)}
         bg="white"
       >
-        <Icon name="Menu" size="40px" color="primaryBlue" />
+        <Icon name="Menu" size={{xs: "30px", md: "40px"}} color="primaryBlue" />
       </Button>
       <Drawer
         isOpen={showSideDrawer}

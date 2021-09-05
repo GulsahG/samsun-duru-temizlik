@@ -24,7 +24,7 @@ const Email = () => {
   return (
     <Div
       m={{md: "5vh 0 5vh 5vw", xl: "5vh 2.5vw"}}
-      w={{md: "50vw", xl: "40vw"}}
+      w={{xs: "80vw", md: "50vw", xl: "40vw"}}
     >
       <form method="post" onSubmit={handleOnSubmit}>
         <Div 
@@ -38,7 +38,7 @@ const Email = () => {
             name="name" 
             m="1rem 0"
             textAlign="left"
-            w={{md: "30vw", xl: "25vw"}}
+            w={{xs: "50vw", md: "30vw", xl: "25vw"}}
           />
         </Div>
         <Div 
@@ -52,7 +52,7 @@ const Email = () => {
             name="email"
             placeholder="E-posta"
             m="1rem 0"
-            w={{md: "30vw", xl: "25vw"}}
+            w={{xs: "50vw", md: "30vw", xl: "25vw"}}
             p={{ x: "2.5rem" }}
             textAlign="left"
             prefix={
@@ -80,7 +80,7 @@ const Email = () => {
             name="phone"
             placeholder="+90 05xx xxx xx xx"
             m="1rem 0"
-            w={{md: "30vw", xl: "25vw"}}
+            w={{xs: "50vw", md: "30vw", xl: "25vw"}}
             p={{ x: "2.5rem" }}
             textAlign="left"
             prefix={
@@ -107,7 +107,8 @@ const Email = () => {
             m="1rem 0"
             name="message" 
             textAlign="left"
-            w={{md: "30vw", xl: "25vw"}}
+            w={{xs: "50vw", md: "30vw", xl: "25vw"}}
+            className="text-area"
             placeholder="Randevu almak için talebinizi buraya yazın..." 
           />
         </Div>
@@ -124,7 +125,7 @@ const Email = () => {
           shadow="3"
           hoverShadow="4"
           type="submit"
-          m={{md: "1vw 0 1vw 36.5vw", lg: "1vw 0 1vw 39.5vw", xl: "1vw 0 1vw 33.5vw"}}
+          m={{xs: "1vw 0 1vw 48.5vw", md: "1vw 0 1vw 36.5vw", lg: "1vw 0 1vw 39.5vw", xl: "1vw 0 1vw 33.5vw"}}
           bg="accentBlue"
           hoverBg="primaryBlue"
           textColor="alpha"

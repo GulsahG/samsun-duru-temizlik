@@ -27,7 +27,7 @@ const AboutUs = () => {
       id="about-us"
     >
       <Div
-        m="10vh auto"
+        m={{xs: "5vh auto", md: "10vh auto"}}
         d="flex"
         flexDir="column"
         w="92.5vw"
@@ -38,16 +38,16 @@ const AboutUs = () => {
       >
         <Text 
           tag="h2"
-          textSize="h2"
+          textSize={{xs: "32px", md: "h2"}}
           textAlign="center"
-          w={{md: "50vw", xl: "35vw"}}
+          w={{xs: "65vw", md: "50vw", xl: "35vw"}}
         >
           Temizlikten yana endişeniz olmasın.
         </Text>
         <Text
-          w={{md: "40vw", xl: "35vw"}}
+          w={{xs: "50vw", md: "40vw", xl: "35vw"}}
           tag="p"
-          textSize="body"
+          textSize="smallB"
           m="5vh auto"
           textAlign="center"
         >
@@ -64,20 +64,21 @@ const AboutUs = () => {
       >
          <Text 
           tag="h2"
-          textSize="h2"
+          textSize={{xs: "32px", md: "h2"}}
           textAlign="center"
           textColor="primaryBlue"
           p="0 10px"
+          m={{xs: "2.5vh 0", md: "0"}}
           className={scroll ? "header underline" : "header"}
         >
           Hakkımızda
         </Text>
         <Text
-          w={{md: "75%", xl: "60%"}}
+          w={{xs: "85%", md: "75%", xl: "60%"}}
           tag="p"
-          textSize="body"
+          textSize={{xs: "smallB", md: "body"}}
           m="2vh auto"
-          textAlign="justify"
+          textAlign={{xs:"center", md: "justify"}}
           className="glass"
           bg="rgba(38, 38, 42, 0.025)"
           p="2vw"

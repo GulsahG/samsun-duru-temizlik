@@ -6,7 +6,7 @@ const Contacts = () => {
   return (
     <Div
       w="90vw"
-      m={{md: "15vh auto 0 auto", lg: "5vh auto 0 auto", xl: "0 auto"}}
+      m={{xs: "47.5vh auto 0 auto", md: "15vh auto 0 auto", lg: "5vh auto 0 auto", xl: "0 auto"}}
       p="5vh 0"
       d="flex"
       flexDir="column"
@@ -16,7 +16,7 @@ const Contacts = () => {
     >
       <Text
         tag="h2"
-        textSize="h2"
+        textSize={{xs: "32px", md: "h2"}}
         textColor="primaryBlue"
       >
         Bize Ulaşın
@@ -26,13 +26,14 @@ const Contacts = () => {
         align="center"
         justify="center"
         m="5vh 0 0 0"
+        flexDir={{xs: "column", md: "row"}}
       >
         <Email />
         <Div
           d="flex"
           flexDir="column"
-          w={{md: "45vw", xl: "40vw"}}
-          m="0 1.25vw 4.5vw 1.25vw"
+          w={{xs: "85vw", md: "45vw", xl: "40vw"}}
+          m={{xs: "7.5vh 0 2.5vh 0", md: "0 1.25vw 4.5vw 1.25vw"}}
         >
           <Text
             tag="h3"
@@ -46,8 +47,8 @@ const Contacts = () => {
           </Text>
           <Text
             tag="p"
-            textSize="body"
-            p="1.5rem 2.5rem"
+            textSize={{xs: "smallB", md: "body"}}
+            p={{xs: "1.5rem 1.25rem", md: "1.5rem 2.5rem"}}
             textAlign="left"
             textWeight="bold"
             textColor="alpha"
@@ -56,8 +57,8 @@ const Contacts = () => {
           </Text>
           <Text
             tag="p"
-            p="0.25rem 2.5rem"
-            textSize="body"
+            p={{xs: "0.25rem 1.25rem", md: "0.25rem 2.5rem"}}
+            textSize={{xs: "smallB", md: "body"}}
             textAlign="left"
             style={{lineHeight: "2.5"}}
           >

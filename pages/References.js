@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 const References = () => {
   const referenceList1 = [
     {
-      name: "Legend Hotel Ayvacık",
+      name: "Legend Hotel",
       location: "https://goo.gl/maps/odYf2vqaMq6Kh6pH8",
     },
     {
@@ -70,10 +70,7 @@ const References = () => {
       location: "https://goo.gl/maps/k73XbEtdVnfhkmno7",
     },
   ];
-  const referenceArr = [
-    referenceList1,
-    referenceList2,
-  ];
+  const referenceArr = [referenceList1, referenceList2];
 
   const [currRefList, setCurrRefList] = useState(0);
   const [right, setRight] = useState(true);
@@ -96,20 +93,19 @@ const References = () => {
       setRight(true);
       setLeft(true);
     }, 500);
-
   };
   return (
     <Div
       w="100vw"
       m="0 auto"
-      p="5vh 0"
+      p={{xs: "0", md: "5vh 0"}}
       d="flex"
       flexDir="column"
       align="center"
       justify="center"
       className="references"
     >
-      <Text tag="h2" textSize="h2" textColor="primaryGreen">
+      <Text tag="h2" textSize={{xs: "32px", md: "h2"}} textColor="primaryGreen">
         Referanslarımız
       </Text>
       <Div
@@ -126,60 +122,71 @@ const References = () => {
           title="Önceki resim"
           className="left glass"
         >
-          <Icon name="LeftArrow" size={{sm: "7.5vw", xl: "3.5vw"}} color="primaryGreen" />
+          <Icon
+            name="LeftArrow"
+            size={{ xs: "10vw", md: "7.5vw", xl: "3.5vw" }}
+            color="primaryGreen"
+          />
         </button>
-            <Div
-              p="0 2.5vw"
-              w="70vw"
-              d="flex"
-              align={{xs: "center", xl: "flex-start"}}
-              justify="center"
-              flexWrap="wrap"
-              flexDir={{xs: "column", xl: "row"}}
-            >
-              {referenceArr[currRefList].map((ref, idx) => {
-                return (
-                  <Div
-                    className="reference"
-                    minW={{md: "60vw", xl: "15vw"}}
-                    h="15vh"
-                    m={{md: "2vh 0", xl: "5vh -0.75vw"}}
-                    p="2.5%"
-                    d="flex"
-                    key={idx}
-                    align="center"
-                    justify="space-between"
-                    style={{ backgroundImage: `url(${"./gradient-bg.jpg"})`, transform: `translateX(${(right && left) ? 0 : !right ? -15 : 15}%)`, transition: "all 0.75s"}}
-                  >
-                    <Div>
-                      <Text
-                        tag="h3"
-                        textSize="h3"
-                        textColor="alpha"
-                        m="1.5% 0"
-                        fontFamily="secondary"
-                      >
-                        {ref.name.toLowerCase()}
-                      </Text>
-                    </Div>
-                    <Anchor href={ref.location} target="_blank">
-                      <Icon name="LocationSolid" size="30px" color="primaryGreen" />
-                    </Anchor>
-                  </Div>
-                );
-                })
-              }
-            </Div>
+        <Div
+          p="0 2.5vw"
+          w={{xs: "85vw", md: "70vw"}}
+          d="flex"
+          align={{ xs: "center", xl: "flex-start" }}
+          justify="center"
+          flexWrap="wrap"
+          flexDir={{ xs: "column", xl: "row" }}
+        >
+          {referenceArr[currRefList].map((ref, idx) => {
+            return (
+              <Div
+                className="reference"
+                minW={{ xs: "70vw", md: "60vw", xl: "15vw" }}
+                h="15vh"
+                m={{ xs: "2vh 0", xl: "5vh -0.75vw" }}
+                p="2.5%"
+                d="flex"
+                key={idx}
+                align="center"
+                justify="space-between"
+                style={{
+                  backgroundImage: `url(${"./gradient-bg.jpg"})`,
+                  transform: `translateX(${
+                    right && left ? 0 : !right ? -15 : 15
+                  }%)`,
+                  transition: "all 0.75s",
+                }}
+              >
+                <Text
+                  tag="h3"
+                  textSize={{xs: "16px", md: "h3"}}
+                  textColor="alpha"
+                  p="1.25%"
+                  fontFamily="secondary"
+                >
+                  {ref.name.toLowerCase()}
+                </Text>
+                <Anchor href={ref.location} target="_blank">
+                  <Icon name="LocationSolid" size={{xs: "25px", md:"30px"}} color="primaryGreen" />
+                </Anchor>
+              </Div>
+            );
+          })}
+        </Div>
         <button
           type="button"
           onClick={() => onClickHandler(true)}
           title="Sonraki resim"
           className="right glass"
         >
-          <Icon name="RightArrow" size={{sm: "7.5vw", xl: "3.5vw"}} color="primaryGreen" />
+          <Icon
+            name="RightArrow"
+            size={{ xs: "10vw", md: "7.5vw", xl: "3.5vw" }}
+            color="primaryGreen"
+          />
         </button>
       </Div>
-      </Div>
+    </Div>
   );
 };
 

@@ -1,5 +1,6 @@
 import { Anchor, Div, Image, Text } from 'atomize';
 import React from 'react';
+import { Breakpoint } from 'react-socks';
 
 const Footer = () => {
   return (
@@ -8,37 +9,52 @@ const Footer = () => {
         d="flex"
         justify="space-between"
         align="center"
-        p="1rem 2.5rem 1rem 1rem"
+        p={{xs: "1rem", lg: "1rem 2.5rem 1rem 1rem"}}
       >
         <Text
           tag="p"
-          textSize="body"
+          textSize={{xs: "smallB", md: "body"}}
           textColor="alpha"
           m="6rem 0 0 0"
+          w={{xs: "60vw", md: "auto"}}
         >
           Tüm hakları saklıdır © 2021 \ Samsun Duru Temizlik <br />
         </Text>
         <Div
           d="flex"
-          align="center"
+          align={{xs: "flex-end", md: "center"}}
           flexDir="column"
         >
           <Image 
             w="2.5rem" 
             h="2.5rem" 
-            m={{sm: "2.5rem 0 0 2.5rem", xl: "2.5rem 0 0 1rem"}}
+            m={{xs: "2.5rem 0.5rem 0 0", md: "2.5rem 0 0 1rem"}}
             src={require('../images/clown-logo.svg')} 
             alt="Designer logo"
             className="clown-logo"
           />
+          <Breakpoint medium up>
           <Text
             tag="p"
-            textSize="body"
+            textSize={{xs: "smallB", md: "body"}}
             textColor="alpha"
-            p={{sm: "1rem 0 0 2rem", xl: "1rem 1rem 0 1rem"}}
+            textAlign={{xs: "end", md: "none"}}
+            p={{xs: "1rem 0 0 0", md: "1rem 0 0 2rem", xl: "1rem 1rem 0 1rem"}}
           >
             Design by <Anchor textColor="alpha" hoverTextColor="primaryGreen" target="_blank" href="https://portfolio-page-gulsahg.vercel.app/" style={{transition: "color 0.3s"}}>Gülşah Genç</Anchor>
           </Text>
+          </Breakpoint>
+          <Breakpoint small down>
+          <Text
+            tag="p"
+            textSize={{xs: "smallB", md: "body"}}
+            textColor="alpha"
+            textAlign={{xs: "end", md: "none"}}
+            p={{xs: "1rem 0 0 0", md: "1rem 0 0 2rem", xl: "1rem 1rem 0 1rem"}}
+          >
+            Design by <br /><Anchor textColor="alpha" hoverTextColor="primaryGreen" target="_blank" href="https://portfolio-page-gulsahg.vercel.app/" style={{transition: "color 0.3s"}}>Gülşah Genç</Anchor>
+          </Text>
+          </Breakpoint>
         </Div>
       </Div>
     <Div
@@ -58,24 +74,25 @@ const Footer = () => {
         align="center"
         justify="center"
         bg="white"
-        h="35vh"
+        h={{xs: "auto", xl: "35vh"}}
       >
       <Image 
         w={{xs: "100vw", xl:"auto"}}
-        h="10vh" 
+        h={{xs: "7.5vh", md: "10vh"}} 
         p="1.25vh 1vw"
         src={require('../images/logo2.svg')} 
         alt="Samsun Duru Temizlik logo"
         style={{objectFit: "contain"}}
       />
       </Div>
+      <Breakpoint medium up>
       <Div
         d="flex"
         flexGrow="2"
         flexDir="column"
         align="center"
         justify="space-between"
-        h="35vh"
+        h={{xs: "auto", xl: "35vh"}}
         p={{xs: "0.5rem", md: "1rem", xl: "2rem"}}
       >
         <Text
@@ -99,6 +116,7 @@ const Footer = () => {
           Otel / Yurt temizliği <br />
         </Text>
       </Div>
+      </Breakpoint>
       <Div
         d="flex"
         flexGrow="2"
@@ -109,7 +127,7 @@ const Footer = () => {
       >
         <Text
           tag="h3"
-          textSize="h3"
+          textSize={{xs: "body", md: "h3"}}
           textColor="white"
           textWeight="bold"
         >
@@ -117,7 +135,7 @@ const Footer = () => {
         </Text>
         <Text
           tag="p"
-          textSize="body"
+          textSize={{xs: "smallB", md: "body"}}
           textColor="white"
           style={{ lineHeight: "3" }}
           textAlign="center"
@@ -131,12 +149,12 @@ const Footer = () => {
         flexGrow="3"
         flexDir="column"
         justify="space-between"
-        h="35vh"
+        h={{xs: "auto", xl: "35vh"}}
         p={{xs: "0.5rem", md: "1rem", xl: "2rem"}}
       >
         <Text
           tag="h3"
-          textSize="h3"
+          textSize={{xs: "body", md: "h3"}}
           textColor="white"
           textWeight="bold"
           textAlign="center"
@@ -145,7 +163,7 @@ const Footer = () => {
         </Text>
         <Text
           tag="p"
-          textSize="body"
+          textSize={{xs: "smallB", md: "body"}}
           textColor="white"
           style={{ lineHeight: "2.5" }}
           textAlign="center"

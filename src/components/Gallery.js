@@ -29,7 +29,7 @@ const Gallery = () => {
           title="Önceki resim"
           className="carousel-button glass left"
         >
-          <Icon name="LeftArrow" size={{sm: "7.5vw", xl: "3.5vw"}} color="primaryGreen" />
+          <Icon name="LeftArrow" size={{sm: "10vw", md: "7.5vw", xl: "3.5vw"}} color="primaryGreen" />
         </button>
       )
       }
@@ -41,7 +41,7 @@ const Gallery = () => {
           title="Sonraki resim"
           className="carousel-button right glass"
         >
-          <Icon name="RightArrow" size={{sm: "7.5vw", xl: "3.5vw"}} color="primaryGreen" />
+          <Icon name="RightArrow" size={{sm: "10vw", md: "7.5vw", xl: "3.5vw"}} color="primaryGreen" />
         </button>
       )
       }

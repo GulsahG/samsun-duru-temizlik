@@ -24,7 +24,7 @@ const Homepage = () => {
 
   return (
     <Div
-      p="20vh 0 0 0"
+      p={{xs: "15vh 0 0 0", md: "20vh 0 0 0"}}
       id="gallery"
     >
       <Text 
@@ -32,10 +32,10 @@ const Homepage = () => {
         w="92.5vw"
         m="1.5vh auto 5vh auto"
         fontFamily="secondary" 
-        textSize="h1" 
+        textSize={{xs: "h2", md: "h1"}}
         textColor="primaryBlue"
         textAlign="center"
-        className={animation ? "typing" : ""}
+        className={animation ? "typing" : "main-title"}
       >
         samsun duru temizlik
       </Text>
