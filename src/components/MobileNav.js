@@ -71,7 +71,7 @@ const MobileNav = ({ navItems }) => {
         textColor="alpha"
         className="phone-number"
       >
-        <Anchor textWeight="bold" href="tel:+9005323007152" textColor="primaryBlue">Hemen Ara! 🤙</Anchor>
+        <Anchor textWeight="bold" href="tel:+9005323007152" textColor="primaryGreen">Hemen Ara! 🤙</Anchor>
       </Text>
       <Button
         m={{ r: "0.5rem" }}

@@ -28,7 +28,7 @@ const Footer = () => {
           <Image 
             w="2.5rem" 
             h="2.5rem" 
-            m={{xs: "2.5rem 0.5rem 0 0", md: "2.5rem 0 0 1rem"}}
+            m={{xs: "2.5rem 0.5rem 0 0", md: "2.5rem 0 0 5vw", xl: "2.5rem 0 0 1.25vw"}}
             src={require('../images/clown-logo.svg')} 
             alt="Designer logo"
             className="clown-logo"
@@ -78,7 +78,7 @@ const Footer = () => {
       >
       <Image 
         w={{xs: "100vw", xl:"auto"}}
-        h={{xs: "7.5vh", md: "10vh"}} 
+        h={{xs: "7.5vh", xl: "10vh"}} 
         p="1.25vh 1vw"
         src={require('../images/logo2.svg')} 
         alt="Samsun Duru Temizlik logo"
