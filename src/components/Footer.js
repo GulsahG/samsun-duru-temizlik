@@ -1,6 +1,5 @@
 import { Anchor, Div, Image, Text } from 'atomize';
 import React from 'react';
-import { Breakpoint } from 'react-socks';
 
 const Footer = () => {
   return (
@@ -33,28 +32,26 @@ const Footer = () => {
             alt="Designer logo"
             className="clown-logo"
           />
-          <Breakpoint medium up>
           <Text
             tag="p"
             textSize={{xs: "smallB", md: "body"}}
             textColor="alpha"
+            className="desktop-clown"
             textAlign={{xs: "end", md: "none"}}
             p={{xs: "1rem 0 0 0", md: "1rem 0 0 2rem", xl: "1rem 1rem 0 1rem"}}
           >
             Design by <Anchor textColor="alpha" hoverTextColor="primaryGreen" target="_blank" href="https://portfolio-page-gulsahg.vercel.app/" style={{transition: "color 0.3s"}}>Gülşah Genç</Anchor>
           </Text>
-          </Breakpoint>
-          <Breakpoint small down>
           <Text
             tag="p"
             textSize={{xs: "smallB", md: "body"}}
             textColor="alpha"
+            className="mobile-clown"
             textAlign={{xs: "end", md: "none"}}
             p={{xs: "1rem 0 0 0", md: "1rem 0 0 2rem", xl: "1rem 1rem 0 1rem"}}
           >
             Design by <br /><Anchor textColor="alpha" hoverTextColor="primaryGreen" target="_blank" href="https://portfolio-page-gulsahg.vercel.app/" style={{transition: "color 0.3s"}}>Gülşah Genç</Anchor>
           </Text>
-          </Breakpoint>
         </Div>
       </Div>
     <Div
@@ -85,13 +82,13 @@ const Footer = () => {
         style={{objectFit: "contain"}}
       />
       </Div>
-      <Breakpoint medium up>
       <Div
         d="flex"
         flexGrow="2"
         flexDir="column"
         align="center"
         justify="space-between"
+        className="footer-services"
         h={{xs: "auto", xl: "35vh"}}
         p={{xs: "0.5rem", md: "1rem", xl: "2rem"}}
       >
@@ -116,7 +113,6 @@ const Footer = () => {
           Otel / Yurt temizliği <br />
         </Text>
       </Div>
-      </Breakpoint>
       <Div
         d="flex"
         flexGrow="2"

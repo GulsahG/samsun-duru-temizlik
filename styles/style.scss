@@ -18,7 +18,7 @@ body {
   overflow-y: hidden;
 }
 
-.main-title {
+.main-titleM, .main-titleD {
   text-shadow: 1px 0 0 currentColor, 0 1px 0 rgba(38, 38, 42, 0.5);
   line-height: 1.25 !important;
 }
@@ -413,12 +413,44 @@ body {
     height: 3.5vw;
     width: 3.5vw;
   }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .mobile-clown {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .desktop-clown {
+    display: none;
+  }
+
+  .footer-services {
+    display: none !important;
+  }
 }
 
 @media (max-width: 1400px) {
   .typing {
     animation: none;
     border-right: none;
+  }
+
+  .main-titleD {
+    display: none;
+  }
+}
+
+@media (min-width: 1401px) {
+  .main-titleM {
+    display: none;
   }
 }
 

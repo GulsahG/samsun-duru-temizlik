@@ -7,7 +7,6 @@ import Contacts from './Contacts';
 import Services from './Services';
 import References from './References';
 import Footer from '../src/components/Footer';
-import { Breakpoint } from 'react-socks';
 
 const Homepage = () => {
   const [animation, setAnimation] = useState(true);
@@ -28,7 +27,6 @@ const Homepage = () => {
       p={{xs: "15vh 0 0 0", md: "20vh 0 0 0"}}
       id="gallery"
     >
-      <Breakpoint large up>
       <Text 
         tag="h1" 
         w="92.5vw"
@@ -37,12 +35,10 @@ const Homepage = () => {
         textSize={{xs: "h2", md: "h1"}}
         textColor="primaryBlue"
         textAlign="center"
-        className={animation ? "typing main-title" : "main-title"}
+        className={animation ? "typing main-titleD" : "main-titleD"}
       >
         samsun duru temizlik
       </Text>
-      </Breakpoint>
-      <Breakpoint medium down>
       <Text 
         tag="h1" 
         w="92.5vw"
@@ -51,11 +47,10 @@ const Homepage = () => {
         textSize={{xs: "h2", md: "h1"}}
         textColor="primaryBlue"
         textAlign="center"
-        className="main-title"
+        className="main-titleM"
       >
         samsun duru temizlik
       </Text>
-      </Breakpoint>
       <Gallery />
       <AboutUs />
       <Phone />

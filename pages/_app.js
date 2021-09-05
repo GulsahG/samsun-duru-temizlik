@@ -2,7 +2,6 @@ import '../styles/fonts.sass';
 import '../styles/style.scss';
 import Nav from '../src/components/Nav';
 import { NextSeo } from 'next-seo';
-import  { BreakpointProvider } from 'react-socks';
 import { ThemeProvider, StyleReset } from 'atomize';
 import { Provider as StyletronProvider } from "styletron-react";
 import { styletron, debug } from "../helpers/styletron";
@@ -52,7 +51,6 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <StyletronProvider value={styletron}>
       <ThemeProvider theme={theme}>
-        <BreakpointProvider>
           <script>0</script>
           <StyleReset />
           <NextSeo
@@ -79,11 +77,14 @@ const MyApp = ({ Component, pageProps }) => {
               ],
               site_name: 'Duru Temizlik',
             }}
+            additionalMetaTags={[{
+              name: 'viewport',
+              content: 'width=device-width, initial-scale=1.0'
+            }]}
           />
           <Nav />
           <Homepage />
           <Component {...pageProps} />
-        </BreakpointProvider>
       </ThemeProvider>
     </StyletronProvider>
   );
