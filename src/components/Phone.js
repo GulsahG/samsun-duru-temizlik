@@ -23,7 +23,7 @@ const Phone = () => {
       >
         Fiyat teklifi ve randevu almak için bize ulaşın!
       </Text>
-      <Image src={require(`../images/phone-3d.png?webp`)} w={{xs: "85%", md: "40%"}} h="auto" />
+      <Image src={require(`../images/phone-3d.png?webp`)} w={{xs: "85%", md: "40%"}} h="auto" alt="Samsun Duru Temizlik şirketi telefon numarası" />
     </Div>
   );
 }

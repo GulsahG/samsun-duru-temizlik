@@ -77,6 +77,7 @@ const MobileNav = ({ navItems }) => {
         m={{ r: "0.5rem" }}
         onClick={() => setSideDrawer(true)}
         bg="white"
+        aria-label="Kapat"
       >
         <Icon name="Menu" size={{xs: "30px", md: "40px"}} color="primaryBlue" />
       </Button>

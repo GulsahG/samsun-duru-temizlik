@@ -166,7 +166,7 @@ const References = () => {
                 >
                   {ref.name.toLowerCase()}
                 </Text>
-                <Anchor href={ref.location} target="_blank">
+                <Anchor href={ref.location} target="_blank" rel="noopener">
                   <Icon name="LocationSolid" size={{xs: "25px", md:"30px"}} color="primaryGreen" />
                 </Anchor>
               </Div>

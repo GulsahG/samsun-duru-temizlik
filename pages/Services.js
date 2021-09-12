@@ -63,6 +63,7 @@ const Services = () => {
               key={idx}
               className="services-img"
               h={{xs: "25vw", md: "20vw"}}
+              w="auto"
               m={`${img.margin * 5}vw 1.25vw 0 1.25vw`}
             >
               <Magnifier

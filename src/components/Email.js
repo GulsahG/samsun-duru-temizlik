@@ -36,6 +36,7 @@ const Email = () => {
           <Input 
             type="text" 
             name="name" 
+            id="name"
             m="1rem 0"
             textAlign="left"
             w={{xs: "50vw", md: "30vw", xl: "25vw"}}
@@ -50,6 +51,7 @@ const Email = () => {
           <Input
             type="email"
             name="email"
+            id="email"
             placeholder="E-posta"
             m="1rem 0"
             w={{xs: "50vw", md: "30vw", xl: "25vw"}}
@@ -78,6 +80,7 @@ const Email = () => {
           <Input
             type="tel"
             name="phone"
+            id="phone"
             placeholder="+90 05xx xxx xx xx"
             m="1rem 0"
             w={{xs: "50vw", md: "30vw", xl: "25vw"}}
