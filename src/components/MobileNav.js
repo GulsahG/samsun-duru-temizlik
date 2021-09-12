@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Div, Button, SideDrawer, Icon, Text, Image, Anchor, scrollTo } from "atomize";
 
-const Drawer = ({ isOpen, onClose, navItems }) => {
+const Drawer = ({ isOpen, onClose, navItems, setSideDrawer }) => {
   return (
     <SideDrawer 
       isOpen={isOpen} 
@@ -26,7 +26,7 @@ const Drawer = ({ isOpen, onClose, navItems }) => {
           return (
             <Button
               key={idx}
-              onClick={() => scrollTo(item.location, 100, 0, 800)}
+              onClick={() => { scrollTo(item.location, 100, 0, 800);  setTimeout(() => {setSideDrawer(false);}, 500); }}
               bg="white"
             > 
               <Text 
@@ -35,7 +35,7 @@ const Drawer = ({ isOpen, onClose, navItems }) => {
                 textSize="h3"
                 textColor="alpha"
                 hoverTextColor="primaryBlue" 
-                p="6vh 0"
+                p={{xs: "1vh 0", md: "0.5vh 0"}}
               >
                 {item.name}
               </Text>
@@ -84,6 +84,7 @@ const MobileNav = ({ navItems }) => {
         isOpen={showSideDrawer}
         navItems={navItems}
         onClose={() => setSideDrawer(false)}
+        setSideDrawer={setSideDrawer}
       />
     </Div>
   );

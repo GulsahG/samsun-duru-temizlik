@@ -6,7 +6,7 @@ const Contacts = () => {
   return (
     <Div
       w="90vw"
-      m={{xs: "47.5vh auto 0 auto", md: "22.5vh auto 0 auto", lg: "2.5vh auto 0 auto", xl: "0 auto"}}
+      m={{xs: "5vh auto 0 auto", md: "22.5vh auto 0 auto", lg: "5vh auto 0 auto", xl: "12.5vh auto"}}
       p="5vh 0"
       d="flex"
       flexDir="column"

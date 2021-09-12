@@ -24,7 +24,7 @@ const Services = () => {
   const services = [
     {
       title: "Ev, Ofis Temizliği",
-      text: "En çok verilen hizmetlerimizden biri olan ev temizliği, şirketimizin size verdiği fiyat teklifi ardından randevu talebinde bulunmanız ile gerçekleştiriliyor. Verilen fiyat teklifi, evinizin büyüklüğüne ve durumuna göre değişiklik gösteriyor.  Hizmetlerimiz her odanın, banyo ve tuvalet dahil olmak üzere, temizliğini içeriyor. Sunduğumuz temizlik hizmetleri, profosyonel personeller tarafından yapılarak; evinize zarar gelmemesi garantisi ile sağlanıyor. Ofis temizliği hizmetleri de ev temizliğine benzer şekilde işliyor. Ev sahibinin evde bulunması herhangi bir farklılık yaratmamakla birlikte, bulunmaması takdirde gün sonunda anahtar teslimi yapılıyor.",
+      text: "En çok verilen hizmetlerimizden biri olan ev temizliği, şirketimizin size verdiği fiyat teklifi ardından randevu talebinde bulunmanız ile gerçekleştiriliyor. Verilen fiyat teklifi, evinizin büyüklüğüne ve durumuna göre değişiklik gösteriyor. Hizmetlerimiz her odanın, banyo ve tuvalet dahil olmak üzere, temizliğini içeriyor. Sunduğumuz temizlik hizmetleri, profosyonel personeller tarafından yapılarak; evinize zarar gelmemesi garantisi ile sağlanıyor. Ofis temizliği hizmetleri de ev temizliğine benzer şekilde işliyor. Ev sahibinin evde bulunması herhangi bir farklılık yaratmamakla birlikte, bulunmaması takdirde gün sonunda anahtar teslimi yapılıyor.",
       name: "Home",
     },
     {
@@ -88,9 +88,10 @@ const Services = () => {
                 bg="#fff"
                 borderColor="primaryGreen"
                 border="2px solid"
-                textColor="alpha"
+                textColor={activeElement === idx ? "white" : "alpha"}
                 m={{xs: "0 2vw", md: "0 0.5vw"}}
                 p={{ md: "0.25vh 0.5vw", xl: "0.75vh 1.5vw" }}
+                bg={activeElement === idx ? "primaryGreen" : "white"}
                 hoverBg="primaryGreen"
                 hoverTextColor="white"
                 textAlign="center"
@@ -107,7 +108,7 @@ const Services = () => {
       </Div>
       <Div
         className="activeService"
-        style={{ backgroundImage: `url(${"./blob-scatter.svg"})` }}
+        //style={{ backgroundImage: `url(${"./blob-scatter.svg"})` }}
       >
         {services.map((service, idx) => {
           return (
@@ -127,6 +128,7 @@ const Services = () => {
           );
         })}
       </Div>
+      <Div className="services" w="100vw" p={{xs: "0.25vh", lg: "0.30vh", xl: "0.5vh"}} m={{xl: "5vh 0 0 0"}}></Div>
     </Div>
   );
 };
