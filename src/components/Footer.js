@@ -40,7 +40,7 @@ const Footer = () => {
             textAlign={{xs: "end", md: "none"}}
             p={{xs: "1rem 0 0 0", md: "1rem 0 0 2rem", xl: "1rem 1rem 0 1rem"}}
           >
-            Design by <Anchor textColor="alpha" hoverTextColor="primaryGreen" target="_blank" href="https://portfolio-page-gulsahg.vercel.app/" style={{transition: "color 0.3s"}}>Gülşah Genç</Anchor>
+            Design by <Anchor textColor="alpha" hoverTextColor="primaryGreen" target="_blank" rel="noopener" href="https://portfolio-page-gulsahg.vercel.app/" style={{transition: "color 0.3s"}}>Gülşah Genç</Anchor>
           </Text>
           <Text
             tag="p"
@@ -50,7 +50,7 @@ const Footer = () => {
             textAlign={{xs: "end", md: "none"}}
             p={{xs: "1rem 0 0 0", md: "1rem 0 0 2rem", xl: "1rem 1rem 0 1rem"}}
           >
-            Design by <br /><Anchor textColor="alpha" hoverTextColor="primaryGreen" target="_blank" href="https://portfolio-page-gulsahg.vercel.app/" style={{transition: "color 0.3s"}}>Gülşah Genç</Anchor>
+            Design by <br /><Anchor textColor="alpha" hoverTextColor="primaryGreen" target="_blank" rel="noopener" href="https://portfolio-page-gulsahg.vercel.app/" style={{transition: "color 0.3s"}}>Gülşah Genç</Anchor>
           </Text>
         </Div>
       </Div>
