@@ -28,7 +28,7 @@ const Footer = () => {
             w="2.5rem" 
             h="2.5rem" 
             m={{xs: "2.5rem 0.5rem 0 0", md: "2.5rem 0 0 5vw", xl: "2.5rem 0 0 1.25vw"}}
-            src={require('../images/clown-logo.svg')} 
+            src={require('../../public/images/clown-logo.svg')} 
             alt="Designer logo"
             className="clown-logo"
           />
@@ -77,7 +77,7 @@ const Footer = () => {
         w={{xs: "100vw", xl:"auto"}}
         h={{xs: "7.5vh", xl: "10vh"}} 
         p="1.25vh 1vw"
-        src={require('../images/logo2.svg')} 
+        src={require('../../public/images/logo2.svg')} 
         alt="Samsun Duru Temizlik logo"
         style={{objectFit: "contain"}}
       />
@@ -87,7 +87,7 @@ const Footer = () => {
         flexGrow="2"
         flexDir="column"
         align="center"
-        justify="space-between"
+        justify="center"
         className="footer-services"
         h={{xs: "auto", xl: "35vh"}}
         p={{xs: "0.5rem", md: "1rem", xl: "2rem"}}
@@ -118,7 +118,7 @@ const Footer = () => {
         flexGrow="2"
         flexDir="column"
         align="center"
-        justify="space-between"
+        justify="center"
         p={{xs: "0.5rem", md: "1rem", xl: "2rem"}}
       >
         <Text
@@ -133,7 +133,7 @@ const Footer = () => {
           tag="p"
           textSize={{xs: "smallB", md: "body"}}
           textColor="white"
-          style={{ lineHeight: "3" }}
+          style={{ lineHeight: "2.5", maxWidth: "75%" }}
           textAlign="center"
         >
           <b>Telefon:</b> +90 0532 300 71 52 <br />
@@ -144,7 +144,8 @@ const Footer = () => {
         d="flex"
         flexGrow="3"
         flexDir="column"
-        justify="space-between"
+        justify="center"
+        align="center"
         h={{xs: "auto", xl: "35vh"}}
         p={{xs: "0.5rem", md: "1rem", xl: "2rem"}}
       >
@@ -161,7 +162,7 @@ const Footer = () => {
           tag="p"
           textSize={{xs: "smallB", md: "body"}}
           textColor="white"
-          style={{ lineHeight: "2.5" }}
+          style={{ lineHeight: "2.5", maxWidth: "75%" }}
           textAlign="center"
         >
           Şirketimiz haftanın her günü <b>8:30 ile 19:30</b> saatleri arasında,  

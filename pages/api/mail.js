@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const mail = require('@sendgrid/mail');
 
-mail.setApiKey(process.env.SG_API_KEY);
+mail.setApiKey(process.env.SENDGRID_API_KEY);
 export default (req, res) => {
   const body = JSON.parse(req.body);
   
@@ -23,7 +23,7 @@ export default (req, res) => {
   mail
     .send(data)
     .then((send) => {
-      console.log("SIGNUP EMAIL SEND", send);
+      console.log("EMAIL SENT", send);
     })
     .catch((err) => {
       console.log("EMAIL SENDING ERROR", err);

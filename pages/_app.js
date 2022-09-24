@@ -1,11 +1,12 @@
-import '../styles/fonts.sass';
+// import '../styles/fonts.sass';
 import '../styles/style.scss';
-import Nav from '../src/components/Nav';
 import { NextSeo } from 'next-seo';
 import { ThemeProvider, StyleReset } from 'atomize';
 import { Provider as StyletronProvider } from "styletron-react";
-import { styletron, debug } from "../helpers/styletron";
+import Head from 'next/head';
+import { styletron } from "../helpers/styletron";
 import Homepage from './Homepage';
+import Nav from '../src/components/Nav';
 
 const MyApp = ({ Component, pageProps }) => {
   const theme = {
@@ -53,6 +54,9 @@ const MyApp = ({ Component, pageProps }) => {
       <ThemeProvider theme={theme}>
           <script>0</script>
           <StyleReset />
+          <Head>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Monda:wght@400;700" />
+          </Head>
           <NextSeo
             title="Samsun Duru Temizlik"
             description="Samsun Duru Temizlik Samsun'un her yerinde ev, ofis temizliği servisi veriyor."
