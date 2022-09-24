@@ -5,17 +5,17 @@ import Magnifier from "react-magnifier";
 const Services = () => {
   const images = [
     {
-      src: require(`../src/images/mirror-min.jpg?webp`),
+      src: require(`../public/images/mirror-min.jpg?webp`),
       margin: "3",
       alt: "Samsun Duru Temizlik, temizlik ürünleri",
     },
     {
-      src: require(`../src/images/kitchen-min.jpg?webp`),
+      src: require(`../public/images/kitchen-min.jpg?webp`),
       margin: "1",
       alt: "Samsun temizlik şirketi elemanı",
     },
     {
-      src: require(`../src/images/vacuum2-min.jpg?webp`),
+      src: require(`../public/images/vacuum2-min.jpg?webp`),
       margin: "4",
       alt: "Temizlik ürünleri dolu vileda sepeti",
     },
@@ -86,7 +86,6 @@ const Services = () => {
               <Icon name={service.name} size="20px" m="1vh 0" color="alpha" />
               <Button
                 key={idx}
-                bg="#fff"
                 borderColor="primaryGreen"
                 border="2px solid"
                 textColor={activeElement === idx ? "white" : "alpha"}

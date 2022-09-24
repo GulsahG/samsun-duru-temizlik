@@ -19,7 +19,7 @@ const Nav = () => {
             w="auto"
             h={{ md: "7.5vh", xl: "15vh" }}
             p="1.25vh 1vw"
-            src={require("../images/logo.svg")}
+            src={require("../../public/images/logo.svg")}
             alt="Samsun Duru Temizlik logo"
           />
           <Div

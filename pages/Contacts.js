@@ -28,14 +28,14 @@ const Contacts = () => {
         m="5vh 0 0 0"
         flexDir={{xs: "column", md: "row"}}
       >
-        <Email />
+        {/* <Email /> */}
         <Div
           d="flex"
           flexDir="column"
-          w={{xs: "85vw", md: "45vw", xl: "40vw"}}
-          m={{xs: "7.5vh 0 2.5vh 0", md: "0 1.25vw 4.5vw 1.25vw"}}
+          w={{xs: "85vw", md: "75vw", xl: "70vw"}}
+          // m={{xs: "7.5vh 0 2.5vh 0", md: "0 1.25vw 4.5vw 1.25vw"}}
         >
-          <Text
+          {/* <Text
             tag="h3"
             textSize="h3"
             fontFamily="secondary"
@@ -44,8 +44,8 @@ const Contacts = () => {
             textAlign="center"
           >
             iletisim bilgilerimiz
-          </Text>
-          <Text
+          </Text> */}
+          {/* <Text
             tag="p"
             textSize={{xs: "smallB", md: "body"}}
             p={{xs: "1.5rem 1.25rem", md: "1.5rem 2.5rem"}}
@@ -54,12 +54,12 @@ const Contacts = () => {
             textColor="alpha"
           >
             Duru Temizlik
-          </Text>
+          </Text> */}
           <Text
             tag="p"
             p={{xs: "0.25rem 1.25rem", md: "0.25rem 2.5rem"}}
             textSize={{xs: "smallB", md: "body"}}
-            textAlign="left"
+            textAlign="center"
             style={{lineHeight: "2.5"}}
           >
             <b>Telefon Numarası:</b> +90 0532 300 71 52 <br />

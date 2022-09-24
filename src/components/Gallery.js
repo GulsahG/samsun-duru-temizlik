@@ -5,13 +5,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 
 const Gallery = () => {
   const images = [
-    {src: require(`../images/supplies-min.jpg?webp`), alt: 'Samsun Duru Temizlik, temizlik ürünleri'},
-    {src: require(`../images/gloves-min.jpg?webp`), alt: 'Samsun temizlik şirketi elemanı'},
-    {src: require(`../images/bucket-min.jpg?webp`), alt: 'Temizlik ürünleri dolu vileda sepeti'},
-    {src: require(`../images/spray-min.jpg?webp`), alt: 'Samsun temizlik şirketi elemanı'},
-    {src: require(`../images/vacuum-min.jpg?webp`), alt: 'Samsun ev temizliği süpürme'},
-    {src: require(`../images/sink-min.jpg?webp`), alt: 'Samsun ev lavabo temizliği'},
-    {src: require(`../images/cleaning-min.jpg?webp`), alt: 'Samsun ev banyo temizliği'}
+    { src: `/images/supplies-min.jpg?webp`, alt: 'Samsun Duru Temizlik, temizlik ürünleri' },
+    { src: `/images/gloves-min.jpg?webp`, alt: 'Samsun temizlik şirketi elemanı' },
+    { src: `/images/bucket-min.jpg?webp`, alt: 'Temizlik ürünleri dolu vileda sepeti' },
+    { src: `/images/spray-min.jpg?webp`, alt: 'Samsun temizlik şirketi elemanı' },
+    { src: `/images/vacuum-min.jpg?webp`, alt: 'Samsun ev temizliği süpürme' },
+    { src: `/images/sink-min.jpg?webp`, alt: 'Samsun ev lavabo temizliği' },
+    { src: `/images/cleaning-min.jpg?webp`, alt: 'Samsun ev banyo temizliği' }
   ]
 
   return (

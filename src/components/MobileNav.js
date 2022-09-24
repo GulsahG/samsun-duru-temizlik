@@ -61,7 +61,7 @@ const MobileNav = ({ navItems }) => {
         w={{xs:"30vw", md:"20vw"}} 
         h="auto" 
         p="1.25vh 1vw"
-        src={require('../images/logo.svg')} 
+        src={require('../../public/images/logo.svg')} 
         alt="Samsun Duru Temizlik logo"
       />
       <Text 
