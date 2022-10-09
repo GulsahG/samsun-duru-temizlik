@@ -45,7 +45,7 @@ const Contacts = () => {
                 'scrollbars=yes,
                 toolbar=no,
                 width=700,
-                height=500
+                height=500'
               )
             )
           ">
