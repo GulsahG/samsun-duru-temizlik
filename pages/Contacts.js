@@ -26,9 +26,32 @@ const Contacts = () => {
         align="center"
         justify="center"
         m="5vh 0 0 0"
-        flexDir={{xs: "column", md: "row"}}
+        flexDir="column"
       >
-        {/* <Email /> */}
+        <Text
+         tag="body"
+         textSize={{xs: "21px", md: "17px"}}
+         m="2vh 0"
+         textColor="alpha"
+         hoverTextColor="primaryBlue"
+         width="auto"
+         textAlign="center"
+        >
+          <a
+            href="javascript:void(
+              window.open(
+                'https://form.jotform.com/222816092045048',
+                'blank',
+                'scrollbars=yes,
+                toolbar=no,
+                width=700,
+                height=500
+              )
+            )
+          ">
+            Samsun Duru Temizlik İletişim Formu
+          </a>
+        </Text>
         <Div
           d="flex"
           flexDir="column"
