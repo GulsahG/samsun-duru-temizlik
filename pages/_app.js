@@ -53,6 +53,7 @@ const MyApp = ({ Component, pageProps }) => {
     <StyletronProvider value={styletron}>
       <ThemeProvider theme={theme}>
           <script>0</script>
+          <script src='https://www.noupe.com/embed/0197884393f97a568e347f355edf73ac1db9.js'></script>
           <StyleReset />
           <Head>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Monda:wght@400;700" />
